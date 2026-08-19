@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>유대교·조로아스터교·불교·그리스도교의 기원과 접점</title>
+<meta name="description" content="유대교·조로아스터교·불교·그리스도교의 기원을 비교하고, 이후 역사 속 확실한 접촉과 논쟁적인 영향 관계를 타임라인·관계도·연표로 정리했습니다.">
+<style>
+  :root {
+    --stone: #EDE6D5;
+    --paper-2: #F7F2E6;
+    --ink: #2A2318;
+    --muted: #8A7D5C;
+    --line: #DCD1B4;
+    --amber: #B5691A;
+    --amber-soft: #F0DDBB;
+    --indigo: #3C4784;
+    --indigo-soft: #DADFF4;
+    --olive: #5B6B2E;
+    --olive-soft: #DEE3C1;
+    --teal: #1E7A72;
+    --teal-soft: #CDE6E0;
+    --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    --font-body: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --stone: #1B160E;
+      --paper-2: #241D12;
+      --ink: #EEE4CE;
+      --muted: #A89873;
+      --line: #3A3020;
+      --amber: #E39A4E;
+      --amber-soft: #3A2A14;
+      --indigo: #8393DE;
+      --indigo-soft: #242C52;
+      --olive: #9AAE5E;
+      --olive-soft: #2A3018;
+      --teal: #5FC2B4;
+      --teal-soft: #163430;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --stone: #1B160E;
+    --paper-2: #241D12;
+    --ink: #EEE4CE;
+    --muted: #A89873;
+    --line: #3A3020;
+    --amber: #E39A4E;
+    --amber-soft: #3A2A14;
+    --indigo: #8393DE;
+    --indigo-soft: #242C52;
+    --olive: #9AAE5E;
+    --olive-soft: #2A3018;
+    --teal: #5FC2B4;
+    --teal-soft: #163430;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--stone);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+
+  .page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: clamp(28px, 6vw, 64px) clamp(18px, 5vw, 32px) 72px;
+  }
+
+  header.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-bottom: 28px;
+    margin-bottom: 36px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .eyebrow {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 14px;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(26px, 4vw, 38px);
+    line-height: 1.18;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .rule-split {
+    display: flex;
+    height: 3px;
+    width: 128px;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .rule-split span { flex: 1; }
+  .rule-split span:nth-child(1) { background: var(--olive); }
+  .rule-split span:nth-child(2) { background: var(--amber); }
+  .rule-split span:nth-child(3) { background: var(--teal); }
+  .rule-split span:nth-child(4) { background: var(--indigo); }
+
+  .lede {
+    max-width: 68ch;
+    color: var(--ink);
+    font-size: 16px;
+  }
+  .lede .muted-note {
+    display: block;
+    margin-top: 10px;
+    font-size: 13.5px;
+    color: var(--muted);
+  }
+
+  section { margin-bottom: 52px; }
+
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0 0 6px;
+  }
+  .section-intro {
+    color: var(--muted);
+    font-size: 14.5px;
+    margin: 0 0 20px;
+    max-width: 66ch;
+  }
+
+  .legend {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+  }
+  .legend-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .legend-dot.amber { background: var(--amber); }
+  .legend-dot.indigo { background: var(--indigo); }
+  .legend-dot.olive { background: var(--olive); }
+  .legend-dot.teal { background: var(--teal); }
+
+  figure {
+    margin: 0;
+    padding: 20px 16px 16px;
+    background: var(--paper-2);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+  }
+  .svg-wrap { overflow-x: auto; }
+  figure svg {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-width: 620px;
+  }
+  figure svg.wide { min-width: 760px; }
+  figure text {
+    font-family: var(--font-body);
+  }
+  figcaption {
+    margin-top: 14px;
+    font-size: 13.5px;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+    padding-top: 12px;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+  }
+  table {
+    width: 100%;
+    min-width: 640px;
+    border-collapse: collapse;
+    background: var(--paper-2);
+    font-size: 14.5px;
+  }
+  table.wide { min-width: 920px; font-size: 13.5px; }
+  caption { display: none; }
+  th, td {
+    text-align: left;
+    padding: 13px 16px;
+    vertical-align: top;
+    border-bottom: 1px solid var(--line);
+    line-height: 1.55;
+  }
+  table.wide th, table.wide td { padding: 10px 13px; line-height: 1.5; }
+  thead th {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 15px;
+    border-bottom: 1px solid var(--line);
+    background: var(--paper-2);
+    position: sticky;
+    top: 0;
+  }
+  table.wide thead th { font-size: 13px; }
+  thead th.row-label-head { color: var(--muted); font-family: var(--font-body); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
+  thead th.zo { color: var(--amber); }
+  thead th.ch { color: var(--indigo); }
+  thead th.ju { color: var(--olive); }
+  thead th.bu { color: var(--teal); }
+  tbody th {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--muted);
+    white-space: nowrap;
+    width: 1%;
+  }
+  tbody tr:last-child td, tbody tr:last-child th { border-bottom: none; }
+  tbody tr:hover { background: var(--stone); }
+  td.zo-cell { border-left: 2px solid var(--amber); }
+  td.ch-cell { border-left: 2px solid var(--indigo); }
+  td.ju-cell { border-left: 2px solid var(--olive); }
+  td.bu-cell { border-left: 2px solid var(--teal); }
+  td.empty { color: var(--line); }
+  .yr { font-variant-numeric: tabular-nums; }
+
+  .tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    white-space: nowrap;
+    letter-spacing: 0.01em;
+  }
+  .tag-confirm { border: 1px solid var(--ink); color: var(--ink); }
+  .tag-debate { border: 1px dashed var(--muted); color: var(--muted); }
+  .tag-inherit { border: 2px solid var(--ink); color: var(--ink); font-weight: 700; }
+  .tag-plain { color: var(--muted); }
+
+  .footnote {
+    font-size: 13px;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+    max-width: 74ch;
+  }
+  .footnote p { margin: 0 0 8px; }
+  .footnote p:last-child { margin-bottom: 0; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="hero">
+    <span class="eyebrow">네 전통의 출발점과 이후의 접점</span>
+    <h1>유대교·조로아스터교·불교·그리스도교, 어디서 시작해 어디서 만났나</h1>
+    <div class="rule-split"><span></span><span></span><span></span><span></span></div>
+    <p class="lede">
+      네 전통 모두 흔히 "고대 종교"로 묶이지만, 시작된 시대와 장소는 서로 멀리 떨어져 있습니다.
+      먼저 유대교·조로아스터교·그리스도교 세 전통이 언제, 어디서 출발했는지 비교하고,
+      이어서 불교를 포함한 네 전통이 이후 역사 속에서 실제로 어디서 맞닿았는지 — 확실한 접촉과 학계에서 논쟁 중인 영향 관계를 구분해서 — 정리합니다.
+      <span class="muted-note">※ 조로아스터·유대교의 초기 연대는 학계 추정치이며 합의된 정설이 없습니다. 근거는 각 절 하단에 표시했습니다.</span>
+    </p>
+  </header>
+
+  <section aria-labelledby="timeline-h">
+    <h2 id="timeline-h">기원 타임라인 — 약 1,200년의 간격</h2>
+    <p class="section-intro">각 색선이 하나의 전통입니다. 사건이 몰려 있는 구간을 읽기 쉽게 넓히느라 축의 눈금 간격은 실제 연도와 비례하지 않습니다(꺾인 표시 구간 참고).</p>
+    <div class="legend">
+      <span class="legend-item"><span class="legend-dot olive"></span>유대교</span>
+      <span class="legend-item"><span class="legend-dot amber"></span>조로아스터교</span>
+      <span class="legend-item"><span class="legend-dot indigo"></span>그리스도교</span>
+    </div>
+    <figure>
+      <div class="svg-wrap">
+        <svg class="wide" viewBox="0 0 1120 470" role="img" aria-label="타임라인: 유대교는 족장 전승 기준 기원전 2000년경부터 시작해 기원전 538년경 바빌론 유수 귀환 이후 유일신 신앙으로 확립되었고, 조로아스터교는 기원전 1500년에서 1000년 사이 동부 이란고원에서, 그리스도교는 기원후 30년경 예루살렘에서 시작되어, 조로아스터교와 그리스도교의 시작점 사이에는 약 1,200년의 간격이 있다">
+          <defs>
+            <marker id="tl-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="var(--indigo)"></path>
+            </marker>
+          </defs>
+
+          <!-- lane baselines -->
+          <line x1="150" y1="140" x2="1030" y2="140" stroke="var(--olive)" stroke-width="1.5"></line>
+          <line x1="150" y1="230" x2="1030" y2="230" stroke="var(--amber)" stroke-width="1.5"></line>
+          <line x1="150" y1="320" x2="1030" y2="320" stroke="var(--indigo)" stroke-width="1.5"></line>
+          <line x1="150" y1="375" x2="1030" y2="375" stroke="var(--muted)" stroke-width="1.25"></line>
+
+          <!-- lane labels -->
+          <circle cx="26" cy="140" r="5" fill="var(--olive)"></circle>
+          <text x="40" y="144" font-size="13" fill="var(--olive)" font-family="var(--font-display)">유대교</text>
+          <circle cx="26" cy="230" r="5" fill="var(--amber)"></circle>
+          <text x="40" y="234" font-size="13" fill="var(--amber)" font-family="var(--font-display)">조로아스터교</text>
+          <circle cx="26" cy="320" r="5" fill="var(--indigo)"></circle>
+          <text x="40" y="324" font-size="13" fill="var(--indigo)" font-family="var(--font-display)">그리스도교</text>
+
+          <!-- non-linear axis breaks -->
+          <rect x="410" y="55" width="40" height="330" fill="var(--line)" opacity="0.35"></rect>
+          <rect x="690" y="55" width="40" height="330" fill="var(--line)" opacity="0.35"></rect>
+          <path d="M416,367 L426,383 L436,367 L446,383" fill="none" stroke="var(--muted)" stroke-width="1.5"></path>
+          <path d="M696,367 L706,383 L716,367 L726,383" fill="none" stroke="var(--muted)" stroke-width="1.5"></path>
+
+          <!-- Judaism: patriarchal-to-settlement band -->
+          <rect x="150" y="135" width="208" height="10" rx="2" fill="var(--olive-soft)" stroke="var(--olive)" stroke-width="1"></rect>
+          <line x1="358" y1="140" x2="358" y2="108" stroke="var(--olive)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <circle cx="358" cy="140" r="4" fill="var(--olive)"></circle>
+          <text x="358" y="86" text-anchor="middle" font-size="12.5" fill="var(--ink)">아브라함 전승 ~ 가나안 정착(추정)</text>
+          <text x="358" y="102" text-anchor="middle" font-size="11.5" fill="var(--olive)" class="yr">기원전 2000~1200년경</text>
+
+          <!-- Judaism: Babylonian exile return -->
+          <line x1="635" y1="140" x2="635" y2="108" stroke="var(--olive)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <circle cx="635" cy="140" r="4" fill="var(--olive)"></circle>
+          <text x="635" y="86" text-anchor="middle" font-size="12.5" fill="var(--ink)">바빌론 유수 귀환, 유일신 신앙 확립</text>
+          <text x="635" y="102" text-anchor="middle" font-size="11.5" fill="var(--olive)" class="yr">기원전 538년경</text>
+
+          <!-- Zoroastrianism: uncertainty band -->
+          <rect x="280" y="225" width="130" height="10" rx="2" fill="var(--amber-soft)" stroke="var(--amber)" stroke-width="1"></rect>
+          <line x1="358" y1="230" x2="358" y2="198" stroke="var(--amber)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <circle cx="358" cy="230" r="4" fill="var(--amber)"></circle>
+          <text x="358" y="176" text-anchor="middle" font-size="12.5" fill="var(--ink)">조로아스터 활동 시기(추정)</text>
+          <text x="358" y="192" text-anchor="middle" font-size="11.5" fill="var(--amber)" class="yr">기원전 1500~1000년경</text>
+
+          <!-- Zoroastrianism: Achaemenid -->
+          <line x1="630" y1="230" x2="630" y2="198" stroke="var(--amber)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <circle cx="630" cy="230" r="4" fill="var(--amber)"></circle>
+          <text x="630" y="176" text-anchor="middle" font-size="12.5" fill="var(--ink)">아케메네스 제국의 지배 신앙이 되다</text>
+          <text x="630" y="192" text-anchor="middle" font-size="11.5" fill="var(--amber)" class="yr">기원전 550년경</text>
+
+          <!-- Christianity: Jesus birth -->
+          <line x1="968" y1="320" x2="968" y2="288" stroke="var(--indigo)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <circle cx="968" cy="320" r="4" fill="var(--indigo)"></circle>
+          <text x="958" y="266" text-anchor="end" font-size="12.5" fill="var(--ink)">예수 탄생</text>
+          <text x="958" y="282" text-anchor="end" font-size="11.5" fill="var(--indigo)" class="yr">기원전 4년경</text>
+
+          <!-- Christianity: crucifixion -->
+          <line x1="988" y1="320" x2="988" y2="288" stroke="var(--indigo)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <circle cx="988" cy="320" r="4" fill="var(--indigo)"></circle>
+          <text x="998" y="266" text-anchor="start" font-size="12.5" fill="var(--ink)">십자가 처형</text>
+          <text x="998" y="282" text-anchor="start" font-size="11.5" fill="var(--indigo)" class="yr">기원후 30년경</text>
+
+          <!-- spread arrow -->
+          <line x1="994" y1="320" x2="1028" y2="320" stroke="var(--indigo)" stroke-width="1.5" marker-end="url(#tl-arrow)"></line>
+          <text x="1009" y="340" text-anchor="middle" font-size="11" fill="var(--indigo)">로마 제국 전역 확산</text>
+
+          <!-- Judaism to Christianity continuity -->
+          <line x1="968" y1="146" x2="968" y2="315" stroke="var(--muted)" stroke-width="1" stroke-dasharray="1,4" opacity="0.6"></line>
+          <text x="958" y="228" text-anchor="end" font-size="10.5" fill="var(--muted)">유대교 안에서 등장</text>
+
+          <!-- axis tick labels -->
+          <text x="152" y="394" text-anchor="start" font-size="11.5" fill="var(--muted)" class="yr">기원전 2000년</text>
+          <text x="430" y="394" text-anchor="middle" font-size="11.5" fill="var(--muted)" class="yr">기원전 1000년</text>
+          <text x="710" y="394" text-anchor="middle" font-size="11.5" fill="var(--muted)" class="yr">기원전 400년</text>
+          <text x="1028" y="394" text-anchor="end" font-size="11.5" fill="var(--muted)" class="yr">기원후 100년</text>
+
+          <!-- gap bracket -->
+          <line x1="358" y1="415" x2="358" y2="425" stroke="var(--muted)" stroke-width="1.5"></line>
+          <line x1="988" y1="415" x2="988" y2="425" stroke="var(--muted)" stroke-width="1.5"></line>
+          <line x1="358" y1="420" x2="988" y2="420" stroke="var(--muted)" stroke-width="1.5"></line>
+          <text x="673" y="442" text-anchor="middle" font-size="13" fill="var(--ink)" font-family="var(--font-display)">조로아스터교 → 그리스도교, 약 1,200년의 간격</text>
+        </svg>
+      </div>
+      <figcaption>세 개의 가로선이 각각 유대교(올리브)·조로아스터교(호박색)·그리스도교(남색)의 시간선입니다. 옅은 세로 띠(⌇)는 사건이 뜸한 구간을 압축했다는 표시로, 실제 연도 간격과 비례하지 않습니다. 점선 세로선은 그리스도교가 제2성전 시대 유대교 안에서 등장했음을 나타냅니다.</figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="table-h">
+    <h2 id="table-h">항목별 비교</h2>
+    <p class="section-intro">같은 질문을 세 전통에 나란히 던져봤습니다.</p>
+    <div class="table-wrap">
+      <table>
+        <caption>유대교·조로아스터교·그리스도교의 기원 비교</caption>
+        <thead>
+          <tr>
+            <th scope="col" class="row-label-head">항목</th>
+            <th scope="col" class="ju">유대교</th>
+            <th scope="col" class="zo">조로아스터교</th>
+            <th scope="col" class="ch">그리스도교</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">창시자</th>
+            <td class="ju-cell">단일 창시자보다 아브라함(족장 전승)·모세(율법 전승)로 이어지는 신앙 공동체</td>
+            <td class="zo-cell">조로아스터(자라투스트라) — 이란계 사제이자 시인</td>
+            <td class="ch-cell">나사렛 예수 — 사후 제자들이 신앙 공동체로 조직</td>
+          </tr>
+          <tr>
+            <th scope="row">시작 시점</th>
+            <td class="ju-cell">족장 전승 <span class="yr">기원전 2000년경</span> ~ 가나안 정착 <span class="yr">기원전 1200년경</span>(고고학적 첫 흔적); 유일신 신앙으로는 <span class="yr">기원전 538년경</span> 바빌론 유수 귀환 이후 확립</td>
+            <td class="zo-cell"><span class="yr">기원전 1500~1000년경</span> (학자 간 이견 큼, 일부는 기원전 600년경으로도 봄)</td>
+            <td class="ch-cell"><span class="yr">기원후 30~33년경</span> (십자가 처형 시점 기준)</td>
+          </tr>
+          <tr>
+            <th scope="row">시작 장소</th>
+            <td class="ju-cell">가나안 지역(오늘날 이스라엘/팔레스타인) — 이후 예루살렘이 중심지가 됨</td>
+            <td class="zo-cell">동부 이란고원 — 오늘날 아프가니스탄 인근 박트리아 지역으로 추정</td>
+            <td class="ch-cell">로마 지배하의 유대·갈릴리 — 예루살렘, 나사렛, 베들레헴</td>
+          </tr>
+          <tr>
+            <th scope="row">정치적 배경</th>
+            <td class="ju-cell">초기엔 소규모 부족 연합; 바빌로니아에 멸망·유배(<span class="yr">기원전 587년</span>) 이후 페르시아 아케메네스 제국의 허용으로 귀환·재건</td>
+            <td class="zo-cell">특정 제국 이전부터 존재; 이후 <span class="yr">기원전 550년경</span> 아케메네스 페르시아 제국의 지배 신앙과 결합</td>
+            <td class="ch-cell">로마 제국 티베리우스 황제 치하, 유대 속주(로마 총독 통치)</td>
+          </tr>
+          <tr>
+            <th scope="row">최초의 경전</th>
+            <td class="ju-cell">토라(모세오경) — 구전과 편집을 거쳐 바빌론 유수 전후로 현재 형태에 가깝게 정리된 것으로 추정</td>
+            <td class="zo-cell">가타스(Gathas) — 조로아스터가 지었다고 전해지는 찬가, 후에 아베스타로 편찬</td>
+            <td class="ch-cell">예수 자신은 글을 남기지 않음; 현존 최고(最古) 문헌은 바울 서신(약 50년경)</td>
+          </tr>
+          <tr>
+            <th scope="row">결정적 사건</th>
+            <td class="ju-cell">바빌론 유수(<span class="yr">기원전 587~538년</span>)와 귀환 — 유일신 신앙과 경전 중심 종교로 재정립</td>
+            <td class="zo-cell">아후라 마즈다에 대한 계시 체험 — 기존 다신 신앙과의 결별</td>
+            <td class="ch-cell">예루살렘에서의 십자가 처형과 부활 신앙의 확산</td>
+          </tr>
+          <tr>
+            <th scope="row">초기 확산 경로</th>
+            <td class="ju-cell">가나안/유대 지역 중심 정착; 이후 디아스포라로 지중해 전역에 유대인 공동체 형성</td>
+            <td class="zo-cell">이란고원 → 페르시아 제국 전역(메디아, 박트리아 등)</td>
+            <td class="ch-cell">예루살렘 → 안디옥 → 소아시아·그리스 → 로마(바울의 선교)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="map-h">
+    <h2 id="map-h">세 시작점의 거리 — 개략도</h2>
+    <p class="section-intro">실제 지도가 아니라 동서 위치 관계만 보여주는 개략도입니다. 유대교와 그리스도교는 같은 지역에서 갈라져 나왔지만, 조로아스터교는 그로부터 수천 킬로미터 떨어진 곳에서 독자적으로 출발했습니다.</p>
+    <figure>
+      <div class="svg-wrap">
+        <svg viewBox="0 0 940 260" role="img" aria-label="개략도: 유대교와 그리스도교의 발상지는 가나안·예루살렘으로 같은 지역이며, 조로아스터교의 발상지로 추정되는 박트리아(동부 이란)까지는 약 2,500에서 3,000킬로미터 떨어져 있고 그 사이에 메소포타미아와 페르시아 지역이 있다">
+          <path d="M40,150 C160,132 240,168 330,150 C430,128 480,168 560,150 C650,128 720,168 800,150" fill="none" stroke="var(--muted)" stroke-width="1.5" opacity="0.5"></path>
+
+          <text x="24" y="154" text-anchor="middle" font-size="12" fill="var(--muted)">서</text>
+          <text x="916" y="154" text-anchor="middle" font-size="12" fill="var(--muted)">동</text>
+
+          <text x="90" y="182" text-anchor="middle" font-size="12" fill="var(--muted)">로마</text>
+          <text x="240" y="118" text-anchor="middle" font-size="12" fill="var(--muted)">지중해</text>
+          <text x="560" y="182" text-anchor="middle" font-size="12" fill="var(--muted)">메소포타미아</text>
+          <text x="690" y="118" text-anchor="middle" font-size="12" fill="var(--muted)">페르시아</text>
+
+          <line x1="340" y1="68" x2="780" y2="68" stroke="var(--muted)" stroke-width="1" stroke-dasharray="1,4"></line>
+          <line x1="340" y1="62" x2="340" y2="74" stroke="var(--muted)" stroke-width="1"></line>
+          <line x1="780" y1="62" x2="780" y2="74" stroke="var(--muted)" stroke-width="1"></line>
+          <text x="560" y="52" text-anchor="middle" font-size="12" fill="var(--ink)" class="yr">약 2,500~3,000 km</text>
+
+          <text x="320" y="178" text-anchor="middle" font-size="10.5" fill="var(--muted)">같은 지역</text>
+
+          <!-- Judaism pin -->
+          <circle cx="300" cy="150" r="6" fill="var(--olive)" stroke="var(--paper-2)" stroke-width="2"></circle>
+          <text x="300" y="104" text-anchor="middle" font-size="13" fill="var(--olive)" font-family="var(--font-display)">가나안 · 유대</text>
+          <text x="300" y="120" text-anchor="middle" font-size="11.5" fill="var(--muted)">고대 유대교의 발상지</text>
+
+          <!-- Christianity pin -->
+          <circle cx="340" cy="150" r="6" fill="var(--indigo)" stroke="var(--paper-2)" stroke-width="2"></circle>
+          <text x="360" y="222" text-anchor="start" font-size="13" fill="var(--indigo)" font-family="var(--font-display)">예루살렘</text>
+          <text x="360" y="238" text-anchor="start" font-size="11.5" fill="var(--muted)">예수의 활동 무대</text>
+
+          <!-- Bactria pin -->
+          <circle cx="780" cy="150" r="6" fill="var(--amber)" stroke="var(--paper-2)" stroke-width="2"></circle>
+          <text x="780" y="104" text-anchor="middle" font-size="13" fill="var(--amber)" font-family="var(--font-display)">박트리아 · 동부 이란</text>
+          <text x="780" y="120" text-anchor="middle" font-size="11.5" fill="var(--muted)">조로아스터의 활동 무대(추정)</text>
+        </svg>
+      </div>
+      <figcaption>올리브색 점이 유대교, 남색 점이 그리스도교, 호박색 점이 조로아스터교의 발상지입니다. 유대교와 그리스도교의 두 점은 거의 겹칠 만큼 가깝지만, 조로아스터교의 발상지까지는 메소포타미아·페르시아를 아우르는 넓은 지역이 놓여 있습니다.</figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="net-h">
+    <h2 id="net-h">종교 간 접점 — 관계도</h2>
+    <p class="section-intro">여기서부터 불교가 합류합니다. 네 전통이 이후 역사 속에서 서로 어떻게 얽혔는지, 확실한 접촉과 논쟁 중인 주장을 구분해서 그렸습니다.</p>
+    <div class="legend">
+      <span class="legend-item"><span class="legend-dot teal"></span>불교</span>
+      <span class="legend-item"><span class="legend-dot amber"></span>조로아스터교</span>
+      <span class="legend-item"><span class="legend-dot olive"></span>유대교</span>
+      <span class="legend-item"><span class="legend-dot indigo"></span>그리스도교</span>
+    </div>
+    <figure>
+      <div class="svg-wrap">
+        <svg class="wide" viewBox="0 0 920 300" role="img" aria-label="관계도: 조로아스터교와 유대교는 기원전 539~538년 키루스 대왕의 바빌론 정복과 칙령으로 확실히 접촉했고, 그리스도교는 기원후 30년경 유대교 안에서 직접 발생했다. 조로아스터교가 신약성서의 동방박사 모티프에 영향을 주었다는 주장은 논쟁적이며, 불교가 설화나 교리 면에서 그리스도교에 영향을 주었다는 주장은 직접 증거가 없다">
+          <defs>
+            <marker id="net-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="var(--ink)"></path>
+            </marker>
+            <marker id="net-arrow-muted" markerWidth="7" markerHeight="7" refX="5" refY="2.5" orient="auto">
+              <path d="M0,0 L5,2.5 L0,5 Z" fill="var(--muted)"></path>
+            </marker>
+          </defs>
+
+          <!-- long dotted arc: Buddhism toward the cluster, unconfirmed -->
+          <path d="M138,208 Q440,55 720,150" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="2,5" opacity="0.75"></path>
+          <circle cx="720" cy="150" r="5" fill="var(--paper-2)" stroke="var(--muted)" stroke-width="1.5"></circle>
+          <text x="728" y="154" text-anchor="start" font-size="10.5" fill="var(--muted)">미확증</text>
+          <text x="400" y="68" text-anchor="middle" font-size="11" fill="var(--muted)">아소카 사절 · 간다라 미술 융합</text>
+          <text x="400" y="83" text-anchor="middle" font-size="11" fill="var(--muted)">불교→그리스도교 직접 증거는 없음</text>
+
+          <!-- dashed arc: Zoroastrianism to Christianity, debated -->
+          <path d="M368,208 Q580,140 792,208" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#net-arrow-muted)"></path>
+          <text x="580" y="118" text-anchor="middle" font-size="11" fill="var(--muted)">동방박사(마고이) 모티프</text>
+          <text x="580" y="133" text-anchor="middle" font-size="11" fill="var(--muted)">기원후 1세기경 · ⚠ 논쟁적</text>
+
+          <!-- solid arrow: Zoroastrianism to Judaism, confirmed contact -->
+          <line x1="368" y1="220" x2="572" y2="220" stroke="var(--ink)" stroke-width="1.75" marker-end="url(#net-arrow)"></line>
+          <text x="470" y="196" text-anchor="middle" font-size="11.5" fill="var(--ink)">키루스의 정복·칙령</text>
+          <text x="470" y="211" text-anchor="middle" font-size="11" fill="var(--muted)">기원전 539~538년 · ★ 확실</text>
+
+          <!-- thick solid arrow: Judaism to Christianity, direct inheritance -->
+          <line x1="588" y1="220" x2="792" y2="220" stroke="var(--ink)" stroke-width="3" marker-end="url(#net-arrow)"></line>
+          <text x="690" y="196" text-anchor="middle" font-size="11.5" fill="var(--ink)">예수 운동 발생</text>
+          <text x="690" y="211" text-anchor="middle" font-size="11" fill="var(--muted)">기원후 30년경 · ◆ 직접 상속</text>
+
+          <!-- nodes -->
+          <circle cx="130" cy="220" r="8" fill="var(--teal)"></circle>
+          <text x="130" y="248" text-anchor="middle" font-size="13" fill="var(--teal)" font-family="var(--font-display)">불교</text>
+          <text x="130" y="264" text-anchor="middle" font-size="10.5" fill="var(--muted)">인도 · 기원전 6~5세기(붓다)</text>
+
+          <circle cx="360" cy="220" r="8" fill="var(--amber)"></circle>
+          <text x="360" y="248" text-anchor="middle" font-size="13" fill="var(--amber)" font-family="var(--font-display)">조로아스터교</text>
+          <text x="360" y="264" text-anchor="middle" font-size="10.5" fill="var(--muted)">페르시아 · 기원전 1500~1000년경</text>
+
+          <circle cx="580" cy="220" r="8" fill="var(--olive)"></circle>
+          <text x="580" y="248" text-anchor="middle" font-size="13" fill="var(--olive)" font-family="var(--font-display)">유대교</text>
+          <text x="580" y="264" text-anchor="middle" font-size="10.5" fill="var(--muted)">가나안·유대 · 기원전 2000~538년경</text>
+
+          <circle cx="800" cy="220" r="8" fill="var(--indigo)"></circle>
+          <text x="800" y="248" text-anchor="middle" font-size="13" fill="var(--indigo)" font-family="var(--font-display)">그리스도교</text>
+          <text x="800" y="264" text-anchor="middle" font-size="10.5" fill="var(--muted)">예루살렘 · 기원후 30년경</text>
+        </svg>
+      </div>
+      <figcaption>실선(★확실/◆상속)은 역사적으로 확인된 접촉이나 직접적인 계승을, 점선(⚠논쟁적)은 학계에서 다투는 영향 관계를 나타냅니다. 열린 원으로 끝나는 점선은 "접촉이 주장되지만 직접 증거는 없음"을 뜻합니다 — 불교와 그리스도교 사이가 그렇습니다.</figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="chrono-h">
+    <h2 id="chrono-h">접점 연표 — 연대별 상세</h2>
+    <p class="section-intro">위 관계도의 근거가 된 연대기입니다. 왼쪽으로 갈수록 오래된 사건이며, 빈 칸(—)은 그 시점에 해당 전통에서 특별히 기록할 사건이 없다는 뜻입니다.</p>
+    <div class="table-wrap">
+      <table class="wide">
+        <caption>조로아스터교·유대교·불교·그리스도교의 접점 연대기</caption>
+        <thead>
+          <tr>
+            <th scope="col" class="row-label-head">연대</th>
+            <th scope="col" class="zo">조로아스터교·페르시아</th>
+            <th scope="col" class="ju">유대교·이스라엘</th>
+            <th scope="col" class="bu">불교·인도</th>
+            <th scope="col" class="ch">그리스도교</th>
+            <th scope="col" class="row-label-head">접점</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><span class="yr">기원전 1500년경</span></th>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="bu-cell">베다 시대 브라만교(리그베다) 성립 — 불교의 모태이자 조로아스터교보다도 앞선 뿌리</td>
+            <td class="empty">—</td>
+            <td><span class="tag tag-plain">참고 · 최고령</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="yr">기원전 1500~600년</span><br><small style="color:var(--muted)">연대 논쟁</small></th>
+            <td class="zo-cell">자라투스트라 활동(추정). 아후라 마즈다 신앙, 선악 이원론, 부활·최후심판 교리 형성</td>
+            <td class="ju-cell">족장 전승 → 출애굽 → 시내산 언약 → 왕정(다윗 언약)</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td><span class="tag tag-plain">접촉 없음</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="yr">기원전 586년</span></th>
+            <td class="empty">—</td>
+            <td class="ju-cell">예루살렘 성전 파괴, 바빌론 포로 — 회당·경전 중심 신앙으로 전환</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td><span class="tag tag-debate">접촉 직전</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="yr">기원전 563~483년경</span></th>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="bu-cell">고타마 붓다 생존 연대(통설) — 자라투스트라와 비슷하거나 오히려 늦은 시기</td>
+            <td class="empty">—</td>
+            <td><span class="tag tag-plain">독자 발생</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="yr">기원전 550~539년</span></th>
+            <td class="zo-cell">키루스 대왕, 아케메네스 제국 건설 → 바빌론 정복</td>
+            <td class="ju-cell">포로 유대인이 페르시아 통치권으로 편입</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td><span class="tag tag-confirm">★ 최초 접촉</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="yr">기원전 538년</span></th>
+            <td class="zo-cell">키루스 칙령 — 피정복민 종교 관용 정책</td>
+            <td class="ju-cell">유대인 귀환 허용. 이사야 45:1이 키루스를 "기름부음 받은 자"로 칭함</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td><span class="tag tag-confirm">★ 우호적 관계</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="yr">기원전 515년</span></th>
+            <td class="zo-cell">다리우스 1세 — 비문에 아후라 마즈다 숭배 명시</td>
+            <td class="ju-cell">제2성전 완공. 페르시아 속주 "예후드"로 편입</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td><span class="tag tag-confirm">★ 상시 접촉</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="yr">기원전 515~331년</span><br><small style="color:var(--muted)">약 200년</small></th>
+            <td class="zo-cell">아케메네스 왕실 종교로 유지. 아람어가 제국 공용어가 됨</td>
+            <td class="ju-cell">에스라·느헤미야의 율법 확립. 천사론 정교화, 사탄 개념 변화, 부활 관념 태동</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td><span class="tag tag-debate">⚠ 영향 논쟁 구간</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="yr">기원전 331년</span></th>
+            <td class="zo-cell">알렉산드로스에게 멸망 — 정치적 지배는 끝나지만 신앙은 이란에 존속</td>
+            <td class="ju-cell">헬레니즘 통치로 이행</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td><span class="tag tag-plain">접촉 약화</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="yr">기원전 268~232년</span></th>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="bu-cell">아소카 왕 — 인도 대부분 통일 후 불교 귀의. 바위 칙령 13호에 그리스·헬레니즘 왕들에게 사절 파견 기록</td>
+            <td class="empty">—</td>
+            <td><span class="tag tag-debate">⚠ 서방 도달 시도</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="yr">기원전 250년경</span></th>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="bu-cell">아소카의 불교 사절이 시리아·이집트·마케도니아 등 지중해 헬레니즘 왕실에 도달(칙령 기록상)</td>
+            <td class="empty">—</td>
+            <td><span class="tag tag-debate">⚠ 문헌상 접촉</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="yr">기원전 165년경</span></th>
+            <td class="empty">—</td>
+            <td class="ju-cell">다니엘서 완성(다수설) — 부활 신앙(12:2)과 "인자" 사상이 명문화된 첫 유대 문헌</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td><span class="tag tag-debate">⚠ 결과물 등장</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="yr">기원전 150~기원후 70년</span></th>
+            <td class="empty">—</td>
+            <td class="ju-cell">쿰란 공동체 — "빛의 자녀 vs 어둠의 자녀" 이원론적 종말론. 바리새파의 부활 신앙 확립</td>
+            <td class="bu-cell">알렉산드리아 등지에 인도계 상인·수도승 공동체 존재 추정(고고학적 증거는 제한적)</td>
+            <td class="empty">—</td>
+            <td><span class="tag tag-debate">⚠ 이원론 정착</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="yr">기원후 30~33년</span></th>
+            <td class="empty">—</td>
+            <td class="ju-cell">제2성전 유대교 내 예수 운동 발생</td>
+            <td class="empty">—</td>
+            <td class="ch-cell">예수의 십자가와 부활 신앙 — 유대교의 부활·종말 구도를 그대로 상속</td>
+            <td><span class="tag tag-inherit">◆ 상속 완료</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="yr">기원후 50~100년</span></th>
+            <td class="empty">—</td>
+            <td class="ju-cell">얌니아 이후 랍비 유대교로 재편</td>
+            <td class="bu-cell">인도양 계절풍 무역로 활성화 — 로마·인도 교역 절정(『에리트라해 항해기』)</td>
+            <td class="ch-cell">신약 기록. 마태복음의 동방박사 "마고이"(페르시아 사제 명칭), 요한복음의 빛/어둠 구도</td>
+            <td><span class="tag tag-inherit">◆ 직행 흔적</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="yr">기원후 100~300년</span></th>
+            <td class="zo-cell">파르티아·사산조에서 조로아스터교 국교화(그리스도교와 별개로 존속)</td>
+            <td class="ju-cell">탈무드 전통 형성</td>
+            <td class="bu-cell">쿠샨 제국 — 간다라 불교미술에 그리스·로마 조각 양식 융합(헬레니즘↔불교 물질적 접촉의 확증 사례)</td>
+            <td class="ch-cell">교부·변증가 시대. 천국·지옥·최후심판 교리 체계화</td>
+            <td><span class="tag tag-debate">⚠ 예술적 접촉 확인</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="yr">기원후 200~300년경</span></th>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="bu-cell">일부 학자, 붓다 탄생 설화(동정녀 마야 관련 요소·삼박사 유사 서사 등)와 복음서 서사의 유사성 지적</td>
+            <td class="ch-cell">신약 외경·초기 교부 문헌에서 인도 관련 언급 산발적 등장(예: 마니교 경유)</td>
+            <td><span class="tag tag-debate">⚠ 학설 수준</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="yr">기원후 313~325년</span></th>
+            <td class="zo-cell">사산조 페르시아, 로마 그리스도교와 정치적 대립</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="ch-cell">밀라노 칙령(313)·니케아 공의회(325) — 독립 세계 종교로 정착</td>
+            <td><span class="tag tag-plain">경쟁 관계</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="footnote">
+    <p>
+      ※ ★ = 역사적으로 확인된 접촉, ⚠ = 영향 여부가 학계에서 논쟁 중, ◆ = 유대교를 경유한 직접 상속. 연대는 학계에서 통용되는 근사치이며,
+      조로아스터교 문헌(아베스타)의 성문화 시기가 늦어 "어느 쪽이 어느 쪽에 영향을 줬는지" 방향을 입증하기 어렵다는 점이 페르시아·유대 접촉 논쟁의 핵심입니다.
+    </p>
+    <p>
+      불교와 그리스도교의 접점은 조로아스터교·유대교의 접점보다 증거가 약합니다. 아소카의 사절단 파견과 간다라 미술의 그리스-불교 양식 융합은 사실이지만,
+      그것이 그리스도교 교리 형성에 영향을 줬다는 직접 증거는 없고 대부분 학설·추정 단계에 머물러 있습니다.
+    </p>
+    <p>
+      조로아스터의 정확한 생존 시기는 학계에서 기원전 1500년부터 기원전 600년까지 다양하게 추정되며 합의된 연대가 없습니다.
+      다니엘서의 완성 시기(기원전 165년경) 역시 역사비평학의 다수설이며, 전통적 관점에서는 더 이른 시기로 보기도 합니다.
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
