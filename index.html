@@ -361,6 +361,7 @@
     <button type="button" class="tab-btn" role="tab" id="tab-btn-origins" aria-selected="true" aria-controls="panel-origins">기원과 접점</button>
     <button type="button" class="tab-btn" role="tab" id="tab-btn-theology" aria-selected="false" aria-controls="panel-theology" tabindex="-1">그리스도교 신학 분파</button>
     <button type="button" class="tab-btn" role="tab" id="tab-btn-jesus" aria-selected="false" aria-controls="panel-jesus" tabindex="-1">예수의 생애</button>
+    <button type="button" class="tab-btn" role="tab" id="tab-btn-ot" aria-selected="false" aria-controls="panel-ot" tabindex="-1">구약 연대기</button>
   </div>
 
   <div id="panel-origins" role="tabpanel" aria-labelledby="tab-btn-origins">
@@ -1617,7 +1618,280 @@
 
   </div>
 
-  <p class="colophon">작성자 · 개세마리 · 최초 작성 2026-08-19 · v2.9</p>
+  <div id="panel-ot" role="tabpanel" aria-labelledby="tab-btn-ot" hidden>
+
+  <section aria-labelledby="ot-timeline-h">
+    <h2 id="ot-timeline-h">구약 연대기 — 족장시대부터 페르시아 시대까지</h2>
+    <p class="section-intro">
+      전통적(마소라 본문 기반) 재구성 연대입니다. 족장시대~출애굽~정착기는 성서 내적 연대 계산에 크게 의존해 학계 논쟁이 크고,
+      분열왕국 이후(기원전 9세기~)는 앗시리아·바빌로니아 등 외부 기록과 맞아떨어져 비교적 확실합니다. 옅은 세로 띠는 기록이 뜸한
+      이집트 체류 기간(기원전 1876~1446년경)을 압축했다는 표시입니다.
+    </p>
+    <figure>
+      <div class="svg-wrap">
+        <svg class="wide" viewBox="0 0 1420 380" role="img" aria-label="구약 연대기: 기원전 2000년경 아브라함의 가나안 이주로 족장시대가 시작되고, 기원전 1876년경 요셉을 따라 야곱 가족이 이집트로 이주했다. 이집트 체류기를 지나 기원전 1446년경(이른 연대설) 또는 1250년경(늦은 연대설) 모세가 출애굽을 이끌었고, 시내산 언약을 거쳐 기원전 1400년경 여호수아가 가나안 정착을 시작했다. 기원전 1200~1050년경 사사 시대, 기원전 1050~931년경 사울·다윗·솔로몬의 통일왕국, 기원전 931년 왕국 분열을 거쳐 기원전 722년 북이스라엘이 앗시리아에, 기원전 586년 남유다가 바빌론에 멸망하며 유수가 시작됐다. 기원전 538년 고레스 칙령으로 귀환이 시작되어 기원전 516년 제2성전이 완공되고, 기원전 445년경 에스라·느헤미야의 개혁으로 마무리된다">
+          <defs>
+            <marker id="ot-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="var(--olive)"></path>
+            </marker>
+          </defs>
+
+          <line x1="140" y1="210" x2="1320" y2="210" stroke="var(--olive)" stroke-width="1.5" marker-end="url(#ot-arrow)"></line>
+          <line x1="140" y1="300" x2="1320" y2="300" stroke="var(--muted)" stroke-width="1.25"></line>
+
+          <rect x="300" y="140" width="40" height="140" fill="var(--line)" opacity="0.35"></rect>
+          <path d="M306,292 L316,308 L326,292 L336,308" fill="none" stroke="var(--muted)" stroke-width="1.5"></path>
+
+          <!-- era divider ticks -->
+          <line x1="420" y1="290" x2="420" y2="310" stroke="var(--muted)" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"></line>
+          <line x1="520" y1="290" x2="520" y2="310" stroke="var(--muted)" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"></line>
+          <line x1="720" y1="290" x2="720" y2="310" stroke="var(--muted)" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"></line>
+          <line x1="820" y1="290" x2="820" y2="310" stroke="var(--muted)" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"></line>
+          <line x1="1020" y1="290" x2="1020" y2="310" stroke="var(--muted)" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"></line>
+          <line x1="1120" y1="290" x2="1120" y2="310" stroke="var(--muted)" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"></line>
+
+          <!-- era labels -->
+          <text x="200" y="332" text-anchor="middle" font-size="13" font-style="italic" fill="var(--muted)">족장시대</text>
+          <text x="470" y="332" text-anchor="middle" font-size="13" font-style="italic" fill="var(--muted)">출애굽·광야</text>
+          <text x="620" y="332" text-anchor="middle" font-size="13" font-style="italic" fill="var(--muted)">정착·사사시대</text>
+          <text x="770" y="332" text-anchor="middle" font-size="13" font-style="italic" fill="var(--muted)">통일왕국</text>
+          <text x="920" y="332" text-anchor="middle" font-size="13" font-style="italic" fill="var(--muted)">분열왕국</text>
+          <text x="1070" y="332" text-anchor="middle" font-size="13" font-style="italic" fill="var(--muted)">바빌론 유수</text>
+          <text x="1220" y="332" text-anchor="middle" font-size="13" font-style="italic" fill="var(--muted)">페르시아 시대</text>
+
+          <!-- 1. Abraham (above) -->
+          <circle cx="140" cy="210" r="4" fill="var(--olive)"></circle>
+          <line x1="140" y1="210" x2="140" y2="178" stroke="var(--olive)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <text x="140" y="156" text-anchor="middle" font-size="14" fill="var(--ink)">아브라함 — 족장시대 시작</text>
+          <text x="140" y="172" text-anchor="middle" font-size="12.5" fill="var(--olive)" class="yr">가나안 이주, 기원전 2000년경</text>
+
+          <!-- 2. Joseph to Egypt (below) -->
+          <circle cx="260" cy="210" r="4" fill="var(--olive)"></circle>
+          <line x1="260" y1="210" x2="260" y2="242" stroke="var(--olive)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <text x="260" y="264" text-anchor="middle" font-size="14" fill="var(--ink)">요셉, 이집트 총리</text>
+          <text x="260" y="248" text-anchor="middle" font-size="12.5" fill="var(--olive)" class="yr">야곱 가족 이주, 기원전 1876년경</text>
+
+          <!-- 3. Exodus (above) -->
+          <circle cx="420" cy="210" r="4" fill="var(--olive)"></circle>
+          <line x1="420" y1="210" x2="420" y2="178" stroke="var(--olive)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <text x="420" y="156" text-anchor="middle" font-size="14" fill="var(--ink)">출애굽</text>
+          <text x="420" y="172" text-anchor="middle" font-size="12.5" fill="var(--olive)" class="yr">기원전 1446/1250년경※</text>
+
+          <!-- 4. Settlement (below) -->
+          <circle cx="520" cy="210" r="4" fill="var(--olive)"></circle>
+          <line x1="520" y1="210" x2="520" y2="242" stroke="var(--olive)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <text x="520" y="264" text-anchor="middle" font-size="14" fill="var(--ink)">가나안 정착 시작</text>
+          <text x="520" y="248" text-anchor="middle" font-size="12.5" fill="var(--olive)" class="yr">여호수아, 기원전 1400년경</text>
+
+          <!-- 5. Judges (above) -->
+          <circle cx="620" cy="210" r="4" fill="var(--olive)"></circle>
+          <line x1="620" y1="210" x2="620" y2="178" stroke="var(--olive)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <text x="620" y="156" text-anchor="middle" font-size="14" fill="var(--ink)">사사 시대</text>
+          <text x="620" y="172" text-anchor="middle" font-size="12.5" fill="var(--olive)" class="yr">부족 연맹 체제, 기원전 1200~1050년경</text>
+
+          <!-- 6. United monarchy (below) -->
+          <circle cx="720" cy="210" r="4" fill="var(--olive)"></circle>
+          <line x1="720" y1="210" x2="720" y2="242" stroke="var(--olive)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <text x="720" y="264" text-anchor="middle" font-size="14" fill="var(--ink)">통일왕국</text>
+          <text x="720" y="248" text-anchor="middle" font-size="12.5" fill="var(--olive)" class="yr">사울·다윗·솔로몬, 기원전 1050~931년경</text>
+
+          <!-- 7. Kingdom split (above) -->
+          <circle cx="820" cy="210" r="4" fill="var(--olive)"></circle>
+          <line x1="820" y1="210" x2="820" y2="178" stroke="var(--olive)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <text x="820" y="156" text-anchor="middle" font-size="14" fill="var(--ink)">왕국 분열</text>
+          <text x="820" y="172" text-anchor="middle" font-size="12.5" fill="var(--olive)" class="yr">북이스라엘·남유다, 기원전 931년</text>
+
+          <!-- 8. Fall of Israel (below) -->
+          <circle cx="920" cy="210" r="4" fill="var(--olive)"></circle>
+          <line x1="920" y1="210" x2="920" y2="242" stroke="var(--olive)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <text x="920" y="264" text-anchor="middle" font-size="14" fill="var(--ink)">북이스라엘 멸망</text>
+          <text x="920" y="248" text-anchor="middle" font-size="12.5" fill="var(--olive)" class="yr">앗시리아에 정복, 기원전 722년</text>
+
+          <!-- 9. Fall of Jerusalem (above) -->
+          <circle cx="1020" cy="210" r="4" fill="var(--olive)"></circle>
+          <line x1="1020" y1="210" x2="1020" y2="178" stroke="var(--olive)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <text x="1020" y="156" text-anchor="middle" font-size="14" fill="var(--ink)">예루살렘 함락</text>
+          <text x="1020" y="172" text-anchor="middle" font-size="12.5" fill="var(--olive)" class="yr">성전 파괴·유수 시작, 기원전 586년</text>
+
+          <!-- 10. Cyrus decree (below) -->
+          <circle cx="1120" cy="210" r="4" fill="var(--olive)"></circle>
+          <line x1="1120" y1="210" x2="1120" y2="242" stroke="var(--olive)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <text x="1120" y="264" text-anchor="middle" font-size="14" fill="var(--ink)">고레스 칙령</text>
+          <text x="1120" y="248" text-anchor="middle" font-size="12.5" fill="var(--olive)" class="yr">유수 종료·귀환 시작, 기원전 538년</text>
+
+          <!-- 11. Second Temple (above) -->
+          <circle cx="1220" cy="210" r="4" fill="var(--olive)"></circle>
+          <line x1="1220" y1="210" x2="1220" y2="178" stroke="var(--olive)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <text x="1220" y="156" text-anchor="middle" font-size="14" fill="var(--ink)">제2성전 완공</text>
+          <text x="1220" y="172" text-anchor="middle" font-size="12.5" fill="var(--olive)" class="yr">예루살렘, 기원전 516년</text>
+
+          <!-- 12. Ezra-Nehemiah (below) -->
+          <circle cx="1320" cy="210" r="4" fill="var(--olive)"></circle>
+          <line x1="1320" y1="210" x2="1320" y2="242" stroke="var(--olive)" stroke-width="1.5" stroke-dasharray="2,3"></line>
+          <text x="1320" y="264" text-anchor="middle" font-size="14" fill="var(--ink)">에스라·느헤미야 개혁</text>
+          <text x="1320" y="248" text-anchor="middle" font-size="12.5" fill="var(--olive)" class="yr">성벽 재건, 기원전 445년경</text>
+        </svg>
+      </div>
+      <figcaption>올리브색 선이 시간 흐름이며, 라벨을 위·아래로 번갈아 배치했습니다. 옅은 세로 띠(⌇)는 요셉의 이집트 이주(기원전 1876년경)부터 출애굽(기원전 1446년경)까지, 성서에 상세 기록이 없는 약 430년의 이집트 체류기를 압축했다는 표시입니다. "※"는 출애굽 연대에 대한 학계 논쟁(하단 콜아웃 참고)을 가리킵니다. 하단 이탤릭체는 시대 구분입니다.</figcaption>
+    </figure>
+    <div class="callout">
+      <p class="callout-title">출애굽 연대 논쟁 — 이른 연대설 vs 늦은 연대설</p>
+      <p>
+        <b>이른 연대설(기원전 1446년경)</b>은 열왕기상 6장 1절 — 솔로몬 재위 4년(성전 착공)이 "출애굽 후 480년째"라는 기록을 문자 그대로 계산한 연대입니다.
+        <b>늦은 연대설(기원전 1250년경)</b>은 출애굽기 1장 11절에 등장하는 이집트의 국고성 "라암셋"이 람세스 2세(재위 기원전 1279~1213년경) 시대에 건설된 도시라는
+        고고학적 정황과, 가나안 여러 도시의 파괴층이 기원전 13세기 말에 몰려 있다는 근거를 따른 연대입니다.
+      </p>
+      <p style="margin-top: 10px;">
+        두 설 모두 성서 본문 안에서 근거를 끌어오지만 결론이 다르며, 더 회의적인 학자들("미니멀리스트")은 대규모 이집트 탈출과 가나안 정복을
+        뒷받침할 고고학적 증거가 뚜렷하지 않다는 점에서 출애굽·정복 서사 자체의 역사성에 의문을 제기하기도 합니다.
+      </p>
+    </div>
+  </section>
+
+  <section aria-labelledby="ot-table-h">
+    <h2 id="ot-table-h">시대별 주요 사건</h2>
+    <p class="section-intro">위 타임라인의 핵심 지점 사이사이 사건까지 포함한 상세 목록입니다.</p>
+    <div class="table-wrap">
+      <table class="wide">
+        <caption>구약 시대 주요 사건 연표</caption>
+        <thead>
+          <tr>
+            <th scope="col" class="row-label-head">시대</th>
+            <th scope="col" class="ch">주요 사건</th>
+            <th scope="col" class="ch">연대(추정, 기원전)</th>
+            <th scope="col" class="ch">비고</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">족장시대</th>
+            <td class="ch-cell">아브라함, 가나안으로 이주</td>
+            <td class="ch-cell"><span class="yr">2000년경</span></td>
+            <td class="ch-cell">창세기 12장, 15장(언약)</td>
+          </tr>
+          <tr>
+            <th scope="row">족장시대</th>
+            <td class="ch-cell">야곱 가족, 요셉을 따라 이집트 이주</td>
+            <td class="ch-cell"><span class="yr">1876년경</span></td>
+            <td class="ch-cell">창세기 46장</td>
+          </tr>
+          <tr>
+            <th scope="row">출애굽·광야</th>
+            <td class="ch-cell">모세, 이집트 탈출(출애굽)</td>
+            <td class="ch-cell"><span class="yr">1446 / 1250년경</span></td>
+            <td class="ch-cell">이른/늦은 연대설 논쟁 — 위 콜아웃 참고</td>
+          </tr>
+          <tr>
+            <th scope="row">출애굽·광야</th>
+            <td class="ch-cell">시내산 언약, 십계명</td>
+            <td class="ch-cell"><span class="yr">출애굽 직후</span></td>
+            <td class="ch-cell">출애굽기 19~20장</td>
+          </tr>
+          <tr>
+            <th scope="row">출애굽·광야</th>
+            <td class="ch-cell">가나안 정착 시작</td>
+            <td class="ch-cell"><span class="yr">1400년경</span></td>
+            <td class="ch-cell">여호수아서</td>
+          </tr>
+          <tr>
+            <th scope="row">사사시대</th>
+            <td class="ch-cell">부족 연맹 체제, 순환적 배교·구원 서사</td>
+            <td class="ch-cell"><span class="yr">1200~1050년경</span></td>
+            <td class="ch-cell">드보라·기드온·삼손 등</td>
+          </tr>
+          <tr>
+            <th scope="row">통일왕국</th>
+            <td class="ch-cell">사울, 초대 왕으로 즉위</td>
+            <td class="ch-cell"><span class="yr">1050년경</span></td>
+            <td class="ch-cell">사무엘상</td>
+          </tr>
+          <tr>
+            <th scope="row">통일왕국</th>
+            <td class="ch-cell">다윗, 예루살렘을 수도로 삼음</td>
+            <td class="ch-cell"><span class="yr">1010~970년경</span></td>
+            <td class="ch-cell">"다윗 언약"(사무엘하 7장)</td>
+          </tr>
+          <tr>
+            <th scope="row">통일왕국</th>
+            <td class="ch-cell">솔로몬, 제1성전 건축 완공</td>
+            <td class="ch-cell"><span class="yr">957년경</span></td>
+            <td class="ch-cell">열왕기상 6장</td>
+          </tr>
+          <tr>
+            <th scope="row">분열왕국</th>
+            <td class="ch-cell">왕국 분열 — 북이스라엘·남유다</td>
+            <td class="ch-cell"><span class="yr">931년</span></td>
+            <td class="ch-cell">르호보암·여로보암</td>
+          </tr>
+          <tr>
+            <th scope="row">분열왕국</th>
+            <td class="ch-cell">엘리야·엘리사, 바알 숭배에 맞선 예언 활동</td>
+            <td class="ch-cell"><span class="yr">9세기</span></td>
+            <td class="ch-cell">열왕기상·하</td>
+          </tr>
+          <tr>
+            <th scope="row">분열왕국</th>
+            <td class="ch-cell">북이스라엘 멸망(앗시리아, 사르곤 2세)</td>
+            <td class="ch-cell"><span class="yr">722년</span></td>
+            <td class="ch-cell">열왕기하 17장 — 앗시리아 기록과 일치</td>
+          </tr>
+          <tr>
+            <th scope="row">분열왕국</th>
+            <td class="ch-cell">요시야 개혁, 율법책 발견</td>
+            <td class="ch-cell"><span class="yr">622년경</span></td>
+            <td class="ch-cell">열왕기하 22~23장</td>
+          </tr>
+          <tr>
+            <th scope="row">바빌론 유수</th>
+            <td class="ch-cell">예루살렘 함락, 성전 파괴, 유수 시작</td>
+            <td class="ch-cell"><span class="yr">586년</span></td>
+            <td class="ch-cell">열왕기하 25장 — 바빌로니아 기록과 일치</td>
+          </tr>
+          <tr>
+            <th scope="row">페르시아 시대</th>
+            <td class="ch-cell">고레스 칙령, 귀환 시작</td>
+            <td class="ch-cell"><span class="yr">538년</span></td>
+            <td class="ch-cell">에스라 1장 — 키루스 실린더와 상응</td>
+          </tr>
+          <tr>
+            <th scope="row">페르시아 시대</th>
+            <td class="ch-cell">제2성전 완공</td>
+            <td class="ch-cell"><span class="yr">516년</span></td>
+            <td class="ch-cell">에스라 6장</td>
+          </tr>
+          <tr>
+            <th scope="row">페르시아 시대</th>
+            <td class="ch-cell">에스라·느헤미야, 성벽 재건·율법 재정비</td>
+            <td class="ch-cell"><span class="yr">458~445년경</span></td>
+            <td class="ch-cell">에스라서·느헤미야서</td>
+          </tr>
+          <tr>
+            <th scope="row">페르시아 시대</th>
+            <td class="ch-cell">(전통상) 예언 활동 종료 — 말라기</td>
+            <td class="ch-cell"><span class="yr">5세기경</span></td>
+            <td class="ch-cell">이후 "예언의 침묵기"</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="footnote">
+    <p>
+      ※ 이 연표는 마소라 본문과 성서 내적 연대 계산(예: 열왕기상 6:1)을 따른 전통적 재구성입니다. 분열왕국 이전, 특히 족장시대·출애굽·정복 서사는
+      성서 밖 동시대 기록으로 직접 확인되지 않아 학계에서 역사성 논쟁이 큽니다("미니멀리즘 vs 맥시멀리즘" 논쟁). 반면 기원전 722년 북이스라엘 멸망,
+      기원전 586년 예루살렘 함락, 기원전 538년 고레스 칙령은 각각 앗시리아·바빌로니아·페르시아의 자체 기록(키루스 실린더 등)과 맞아떨어져
+      비교적 확실한 역사적 사건으로 받아들여집니다.
+    </p>
+    <p>
+      "구약(Old Testament)"은 그리스도교 용어이며, 유대교 전통에서는 같은 책들을 다른 순서로 묶어 <b>타나크(Tanakh)</b> — 토라(율법서)·느비임(예언서)·
+      케투빔(성문서)의 머리글자 — 라고 부릅니다. 다루는 사건과 인물은 대부분 겹치지만 책의 배열과 강조점은 서로 다릅니다.
+    </p>
+  </div>
+
+  </div>
+
+  <p class="colophon">작성자 · 개세마리 · 최초 작성 2026-08-19 · v3.0</p>
 
 </div>
 
