@@ -367,7 +367,7 @@
 
   <section aria-labelledby="timeline-h">
     <h2 id="timeline-h">기원 타임라인 — 약 1,200년의 간격</h2>
-    <p class="section-intro">기원전 5000년경부터 보여줍니다. 각 색선이 하나의 전통입니다. 사건이 몰려 있는 구간을 읽기 쉽게 넓히느라 축의 눈금 간격은 실제 연도와 비례하지 않습니다(꺾인 표시 구간 참고). 맨 왼쪽 기원전 5000~2000년 구간은 아래 네 전통과 직접 관련된 사건이 없어 비어 있습니다 — 참고용 여백입니다.</p>
+    <p class="section-intro">기원전 5000년경부터 보여줍니다. 각 색선이 하나의 전통입니다. 사건이 몰려 있는 구간을 읽기 쉽게 넓히느라 축의 눈금 간격은 실제 연도와 비례하지 않습니다(꺾인 표시 구간 참고). 하단의 신석기(기원전 5000~3300년경)·청동기(기원전 3300~1200년경)·철기(기원전 1200~550년경) 표시는 고고학적 시대 구분으로, 아래 네 전통과 직접 관련된 사건이 아니라 배경 맥락입니다.</p>
     <div class="legend">
       <span class="legend-item"><span class="legend-dot gold"></span><i>아텐교(참고)</i></span>
       <span class="legend-item"><span class="legend-dot olive"></span>유대교</span>
@@ -376,7 +376,7 @@
     </div>
     <figure>
       <div class="svg-wrap">
-        <svg class="wide" viewBox="0 0 1360 560" role="img" aria-label="타임라인: 기원전 5000년경부터 시작하며, 기원전 5000~2000년 구간은 아래 네 전통과 직접 관련된 사건이 없는 여백이다. 아텐교 이전 이집트는 기원전 3000년경부터 라·아문 등을 섬기는 다신교였고, 아텐교는 기원전 1353~1336년경으로 넷 중 가장 이르지만 아켄아텐 사후 곧 폐지되어 점선 차선으로 별도 표시했다. 유대교는 족장 전승 기준 기원전 2000년경부터 시작해 기원전 538년경 바빌론 유수 귀환 이후 유일신 신앙으로 확립되었고, 조로아스터교는 기원전 1500년에서 1000년 사이 동부 이란고원에서, 그리스도교는 1세기 초(30년경) 예루살렘에서 시작되어, 조로아스터교와 그리스도교의 시작점 사이에는 약 1,200년의 간격이 있다">
+        <svg class="wide" viewBox="0 0 1360 560" role="img" aria-label="타임라인: 기원전 5000년경부터 시작하며, 하단에 신석기(기원전 5000~3300년경)·청동기(기원전 3300~1200년경)·철기(기원전 1200~550년경) 시대 구분을 배경 맥락으로 표시했다. 아텐교 이전 이집트는 기원전 3000년경부터 라·아문 등을 섬기는 다신교였고, 아텐교는 기원전 1353~1336년경으로 넷 중 가장 이르지만 아켄아텐 사후 곧 폐지되어 점선 차선으로 별도 표시했다. 유대교는 족장 전승 기준 기원전 2000년경부터 시작해 기원전 538년경 바빌론 유수 귀환 이후 유일신 신앙으로 확립되었고, 조로아스터교는 기원전 1500년에서 1000년 사이 동부 이란고원에서, 그리스도교는 1세기 초(30년경) 예루살렘에서 시작되어, 조로아스터교와 그리스도교의 시작점 사이에는 약 1,200년의 간격이 있다">
           <defs>
             <marker id="tl-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
               <path d="M0,0 L6,3 L0,6 Z" fill="var(--indigo)"></path>
@@ -392,98 +392,104 @@
 
           <!-- lane labels -->
           <circle cx="26" cy="140" r="5" fill="var(--gold)"></circle>
-          <text x="40" y="144" font-size="14.5" font-style="italic" fill="var(--gold)" font-family="var(--font-display)">아텐교(참고)</text>
+          <text x="40" y="144" font-size="15.5" font-style="italic" fill="var(--gold)" font-family="var(--font-display)">아텐교(참고)</text>
           <circle cx="26" cy="230" r="5" fill="var(--olive)"></circle>
-          <text x="40" y="234" font-size="14.5" fill="var(--olive)" font-family="var(--font-display)">유대교</text>
+          <text x="40" y="234" font-size="15.5" fill="var(--olive)" font-family="var(--font-display)">유대교</text>
           <circle cx="26" cy="320" r="5" fill="var(--amber)"></circle>
-          <text x="40" y="324" font-size="14.5" fill="var(--amber)" font-family="var(--font-display)">조로아스터교</text>
+          <text x="40" y="324" font-size="15.5" fill="var(--amber)" font-family="var(--font-display)">조로아스터교</text>
           <circle cx="26" cy="410" r="5" fill="var(--indigo)"></circle>
-          <text x="40" y="414" font-size="14.5" fill="var(--indigo)" font-family="var(--font-display)">그리스도교</text>
+          <text x="40" y="414" font-size="15.5" fill="var(--indigo)" font-family="var(--font-display)">그리스도교</text>
 
           <!-- non-linear axis breaks -->
           <rect x="350" y="145" width="40" height="330" fill="var(--line)" opacity="0.35"></rect>
           <path d="M356,457 L366,473 L376,457 L386,473" fill="none" stroke="var(--muted)" stroke-width="1.5"></path>
-          <text x="250" y="250" text-anchor="middle" font-size="12.5" font-style="italic" fill="var(--muted)">(신석기 시대 — 아래 네 전통과 직접 관련된 사건 없음)</text>
           <rect x="650" y="145" width="40" height="330" fill="var(--line)" opacity="0.35"></rect>
           <rect x="930" y="145" width="40" height="330" fill="var(--line)" opacity="0.35"></rect>
           <path d="M656,457 L666,473 L676,457 L686,473" fill="none" stroke="var(--muted)" stroke-width="1.5"></path>
           <path d="M936,457 L946,473 L956,457 L966,473" fill="none" stroke="var(--muted)" stroke-width="1.5"></path>
 
+          <!-- archaeological era labels (background context, not tied to a lane) -->
+          <line x1="263" y1="70" x2="263" y2="465" stroke="var(--muted)" stroke-width="1" stroke-dasharray="1,4" opacity="0.4"></line>
+          <line x1="598" y1="70" x2="598" y2="465" stroke="var(--muted)" stroke-width="1" stroke-dasharray="1,4" opacity="0.4"></line>
+          <text x="206" y="450" text-anchor="middle" font-size="13.5" font-style="italic" fill="var(--muted)">신석기 시대</text>
+          <text x="430" y="450" text-anchor="middle" font-size="13.5" font-style="italic" fill="var(--muted)">청동기 시대</text>
+          <text x="780" y="450" text-anchor="middle" font-size="13.5" font-style="italic" fill="var(--muted)">철기 시대</text>
+
           <!-- Egyptian polytheism, before Atenism: long imprecise background era -->
           <rect x="390" y="135" width="130" height="10" rx="2" fill="var(--gold-soft)" stroke="var(--gold)" stroke-width="1" stroke-dasharray="3,2" opacity="0.75"></rect>
           <path d="M390,136 L382,140 L390,144" fill="none" stroke="var(--gold)" stroke-width="1.5"></path>
           <line x1="455" y1="135" x2="455" y2="64" stroke="var(--gold)" stroke-width="1" stroke-dasharray="1,3" opacity="0.7"></line>
-          <text x="455" y="40" text-anchor="middle" font-size="12.5" font-style="italic" fill="var(--muted)">이집트 다신교(라·아문 등)</text>
-          <text x="455" y="56" text-anchor="middle" font-size="12" fill="var(--muted)" class="yr">기원전 3000년경부터 지속</text>
+          <text x="455" y="40" text-anchor="middle" font-size="13.5" font-style="italic" fill="var(--muted)">이집트 다신교(라·아문 등)</text>
+          <text x="455" y="56" text-anchor="middle" font-size="13" fill="var(--muted)" class="yr">기원전 3000년경부터 지속</text>
 
           <!-- Atenism: Akhenaten, short-lived -->
           <rect x="552" y="135" width="16" height="10" rx="2" fill="var(--gold-soft)" stroke="var(--gold)" stroke-width="1"></rect>
           <line x1="560" y1="140" x2="560" y2="108" stroke="var(--gold)" stroke-width="1.5" stroke-dasharray="2,3"></line>
           <circle cx="560" cy="140" r="4" fill="var(--gold)"></circle>
-          <text x="560" y="86" text-anchor="middle" font-size="14" fill="var(--ink)">아켄아텐, 아텐 신앙 강제</text>
-          <text x="560" y="102" text-anchor="middle" font-size="13" fill="var(--gold)" class="yr">기원전 1353~1336년경 · 단명</text>
+          <text x="560" y="86" text-anchor="middle" font-size="15" fill="var(--ink)">아켄아텐, 아텐 신앙 강제</text>
+          <text x="560" y="102" text-anchor="middle" font-size="14" fill="var(--gold)" class="yr">기원전 1353~1336년경 · 단명</text>
 
           <!-- Judaism: patriarchal-to-settlement band -->
           <rect x="390" y="225" width="208" height="10" rx="2" fill="var(--olive-soft)" stroke="var(--olive)" stroke-width="1"></rect>
           <line x1="598" y1="230" x2="598" y2="198" stroke="var(--olive)" stroke-width="1.5" stroke-dasharray="2,3"></line>
           <circle cx="598" cy="230" r="4" fill="var(--olive)"></circle>
-          <text x="598" y="176" text-anchor="middle" font-size="14" fill="var(--ink)">아브라함 전승 ~ 가나안 정착(추정)</text>
-          <text x="598" y="192" text-anchor="middle" font-size="13" fill="var(--olive)" class="yr">기원전 2000~1200년경</text>
+          <text x="598" y="176" text-anchor="middle" font-size="15" fill="var(--ink)">아브라함 전승 ~ 가나안 정착(추정)</text>
+          <text x="598" y="192" text-anchor="middle" font-size="14" fill="var(--olive)" class="yr">기원전 2000~1200년경</text>
 
           <!-- Judaism: Babylonian exile return -->
           <line x1="875" y1="230" x2="875" y2="198" stroke="var(--olive)" stroke-width="1.5" stroke-dasharray="2,3"></line>
           <circle cx="875" cy="230" r="4" fill="var(--olive)"></circle>
-          <text x="875" y="176" text-anchor="middle" font-size="14" fill="var(--ink)">바빌론 유수 귀환, 유일신 신앙 확립</text>
-          <text x="875" y="192" text-anchor="middle" font-size="13" fill="var(--olive)" class="yr">기원전 538년경</text>
+          <text x="875" y="176" text-anchor="middle" font-size="15" fill="var(--ink)">바빌론 유수 귀환, 유일신 신앙 확립</text>
+          <text x="875" y="192" text-anchor="middle" font-size="14" fill="var(--olive)" class="yr">기원전 538년경</text>
 
           <!-- Zoroastrianism: uncertainty band -->
           <rect x="520" y="315" width="130" height="10" rx="2" fill="var(--amber-soft)" stroke="var(--amber)" stroke-width="1"></rect>
           <line x1="598" y1="320" x2="598" y2="288" stroke="var(--amber)" stroke-width="1.5" stroke-dasharray="2,3"></line>
           <circle cx="598" cy="320" r="4" fill="var(--amber)"></circle>
-          <text x="598" y="266" text-anchor="middle" font-size="14" fill="var(--ink)">조로아스터 활동 시기(추정)</text>
-          <text x="598" y="282" text-anchor="middle" font-size="13" fill="var(--amber)" class="yr">기원전 1500~1000년경</text>
+          <text x="598" y="266" text-anchor="middle" font-size="15" fill="var(--ink)">조로아스터 활동 시기(추정)</text>
+          <text x="598" y="282" text-anchor="middle" font-size="14" fill="var(--amber)" class="yr">기원전 1500~1000년경</text>
 
           <!-- Zoroastrianism: Achaemenid -->
           <line x1="870" y1="320" x2="870" y2="288" stroke="var(--amber)" stroke-width="1.5" stroke-dasharray="2,3"></line>
           <circle cx="870" cy="320" r="4" fill="var(--amber)"></circle>
-          <text x="870" y="266" text-anchor="middle" font-size="14" fill="var(--ink)">아케메네스 제국의 지배 신앙이 되다</text>
-          <text x="870" y="282" text-anchor="middle" font-size="13" fill="var(--amber)" class="yr">기원전 550년경</text>
+          <text x="870" y="266" text-anchor="middle" font-size="15" fill="var(--ink)">아케메네스 제국의 지배 신앙이 되다</text>
+          <text x="870" y="282" text-anchor="middle" font-size="14" fill="var(--amber)" class="yr">기원전 550년경</text>
 
           <!-- Christianity: Jesus birth -->
           <line x1="1208" y1="410" x2="1208" y2="378" stroke="var(--indigo)" stroke-width="1.5" stroke-dasharray="2,3"></line>
           <circle cx="1208" cy="410" r="4" fill="var(--indigo)"></circle>
-          <text x="1198" y="356" text-anchor="end" font-size="14" fill="var(--ink)">예수 탄생</text>
-          <text x="1198" y="372" text-anchor="end" font-size="13" fill="var(--indigo)" class="yr">기원전 4년경</text>
+          <text x="1198" y="356" text-anchor="end" font-size="15" fill="var(--ink)">예수 탄생</text>
+          <text x="1198" y="372" text-anchor="end" font-size="14" fill="var(--indigo)" class="yr">기원전 4년경</text>
 
           <!-- Christianity: crucifixion -->
           <line x1="1228" y1="410" x2="1228" y2="378" stroke="var(--indigo)" stroke-width="1.5" stroke-dasharray="2,3"></line>
           <circle cx="1228" cy="410" r="4" fill="var(--indigo)"></circle>
-          <text x="1238" y="356" text-anchor="start" font-size="14" fill="var(--ink)">십자가 처형</text>
-          <text x="1238" y="372" text-anchor="start" font-size="13" fill="var(--indigo)" class="yr">1세기 초(30년경)</text>
+          <text x="1238" y="356" text-anchor="start" font-size="15" fill="var(--ink)">십자가 처형</text>
+          <text x="1238" y="372" text-anchor="start" font-size="14" fill="var(--indigo)" class="yr">1세기 초(30년경)</text>
 
           <!-- spread arrow -->
           <line x1="1234" y1="410" x2="1268" y2="410" stroke="var(--indigo)" stroke-width="1.5" marker-end="url(#tl-arrow)"></line>
-          <text x="1249" y="430" text-anchor="middle" font-size="12.5" fill="var(--indigo)">로마 제국 전역 확산</text>
+          <text x="1249" y="430" text-anchor="middle" font-size="13.5" fill="var(--indigo)">로마 제국 전역 확산</text>
 
           <!-- Judaism to Christianity continuity -->
           <line x1="1208" y1="236" x2="1208" y2="405" stroke="var(--muted)" stroke-width="1" stroke-dasharray="1,4" opacity="0.6"></line>
-          <text x="1198" y="318" text-anchor="end" font-size="12" fill="var(--muted)">유대교 안에서 등장</text>
+          <text x="1198" y="318" text-anchor="end" font-size="13" fill="var(--muted)">유대교 안에서 등장</text>
 
           <!-- axis tick labels -->
-          <text x="152" y="484" text-anchor="start" font-size="13" fill="var(--muted)" class="yr">기원전 5000년</text>
-          <text x="392" y="484" text-anchor="start" font-size="13" fill="var(--muted)" class="yr">기원전 2000년</text>
-          <text x="670" y="484" text-anchor="middle" font-size="13" fill="var(--muted)" class="yr">기원전 1000년</text>
-          <text x="950" y="484" text-anchor="middle" font-size="13" fill="var(--muted)" class="yr">기원전 400년</text>
-          <text x="1268" y="484" text-anchor="end" font-size="13" fill="var(--muted)" class="yr">1세기</text>
+          <text x="152" y="484" text-anchor="start" font-size="14" fill="var(--muted)" class="yr">기원전 5000년</text>
+          <text x="392" y="484" text-anchor="start" font-size="14" fill="var(--muted)" class="yr">기원전 2000년</text>
+          <text x="670" y="484" text-anchor="middle" font-size="14" fill="var(--muted)" class="yr">기원전 1000년</text>
+          <text x="950" y="484" text-anchor="middle" font-size="14" fill="var(--muted)" class="yr">기원전 400년</text>
+          <text x="1268" y="484" text-anchor="end" font-size="14" fill="var(--muted)" class="yr">1세기</text>
 
           <!-- gap bracket -->
           <line x1="598" y1="505" x2="598" y2="515" stroke="var(--muted)" stroke-width="1.5"></line>
           <line x1="1228" y1="505" x2="1228" y2="515" stroke="var(--muted)" stroke-width="1.5"></line>
           <line x1="598" y1="510" x2="1228" y2="510" stroke="var(--muted)" stroke-width="1.5"></line>
-          <text x="913" y="532" text-anchor="middle" font-size="14.5" fill="var(--ink)" font-family="var(--font-display)">조로아스터교 → 그리스도교, 약 1,200년의 간격</text>
+          <text x="913" y="532" text-anchor="middle" font-size="15.5" fill="var(--ink)" font-family="var(--font-display)">조로아스터교 → 그리스도교, 약 1,200년의 간격</text>
         </svg>
       </div>
-      <figcaption>왼쪽 끝(기원전 5000년)부터 오른쪽 끝(기원후 100년)까지입니다. 맨 왼쪽 옅은 회색 띠 구간(기원전 5000~2000년)은 아래 네 전통과 직접 관련된 사건이 없어 비워둔 여백입니다. 그 오른쪽부터 네 개의 가로선이 각각 아텐교(금색, 점선·참고)·유대교(올리브)·조로아스터교(호박색)·그리스도교(남색)의 시간선입니다. 아텐교 선만 점선으로 그려, 나머지 세 전통의 "1,200년 간격" 비교 대상이 아니라는 것을 표시했습니다. 아텐교 선 맨 왼쪽의 옅은 띠와 "◀" 표시는 이집트가 이미 기원전 3000년경부터 다신교였고 그 이전부터도 이어졌다는 뜻입니다(왼쪽 끝을 넘어 계속됨). 가운데의 짙은 띠는 아텐교 자체(기원전 1353~1336년경)입니다. 옅은 세로 띠(⌇)는 사건이 뜸한 구간을 압축했다는 표시로, 실제 연도 간격과 비례하지 않습니다. 점선 세로선은 그리스도교가 제2성전 시대 유대교 안에서 등장했음을 나타냅니다.</figcaption>
+      <figcaption>왼쪽 끝(기원전 5000년)부터 오른쪽 끝(기원후 100년)까지입니다. 하단의 이탤릭 글자(신석기·청동기·철기)는 고고학적 시대 구분이고, 점선 세로줄은 그 경계(기원전 3300년경, 1200년경)입니다 — 아래 네 전통과 직접 관련된 사건은 아니고 배경 맥락입니다. 그 위로 네 개의 가로선이 각각 아텐교(금색, 점선·참고)·유대교(올리브)·조로아스터교(호박색)·그리스도교(남색)의 시간선입니다. 아텐교 선만 점선으로 그려, 나머지 세 전통의 "1,200년 간격" 비교 대상이 아니라는 것을 표시했습니다. 아텐교 선 맨 왼쪽의 옅은 띠와 "◀" 표시는 이집트가 이미 기원전 3000년경부터 다신교였고 그 이전부터도 이어졌다는 뜻입니다(왼쪽 끝을 넘어 계속됨). 가운데의 짙은 띠는 아텐교 자체(기원전 1353~1336년경)입니다. 옅은 세로 띠(⌇)는 사건이 뜸한 구간을 압축했다는 표시로, 실제 연도 간격과 비례하지 않습니다. 점선 세로선은 그리스도교가 제2성전 시대 유대교 안에서 등장했음을 나타냅니다.</figcaption>
     </figure>
     <div class="callout">
       <p class="callout-title">아텐교가 "참고"로 점선 처리된 이유</p>
@@ -570,35 +576,35 @@
         <svg viewBox="0 0 940 260" role="img" aria-label="개략도: 유대교와 그리스도교의 발상지는 가나안·예루살렘으로 같은 지역이며, 조로아스터교의 발상지로 추정되는 박트리아(동부 이란)까지는 약 2,500에서 3,000킬로미터 떨어져 있고 그 사이에 메소포타미아와 페르시아 지역이 있다">
           <path d="M40,150 C160,132 240,168 330,150 C430,128 480,168 560,150 C650,128 720,168 800,150" fill="none" stroke="var(--muted)" stroke-width="1.5" opacity="0.5"></path>
 
-          <text x="24" y="154" text-anchor="middle" font-size="13.5" fill="var(--muted)">서</text>
-          <text x="916" y="154" text-anchor="middle" font-size="13.5" fill="var(--muted)">동</text>
+          <text x="24" y="154" text-anchor="middle" font-size="14.5" fill="var(--muted)">서</text>
+          <text x="916" y="154" text-anchor="middle" font-size="14.5" fill="var(--muted)">동</text>
 
-          <text x="90" y="182" text-anchor="middle" font-size="13.5" fill="var(--muted)">로마</text>
-          <text x="240" y="118" text-anchor="middle" font-size="13.5" fill="var(--muted)">지중해</text>
-          <text x="560" y="182" text-anchor="middle" font-size="13.5" fill="var(--muted)">메소포타미아</text>
-          <text x="690" y="118" text-anchor="middle" font-size="13.5" fill="var(--muted)">페르시아</text>
+          <text x="90" y="182" text-anchor="middle" font-size="14.5" fill="var(--muted)">로마</text>
+          <text x="240" y="118" text-anchor="middle" font-size="14.5" fill="var(--muted)">지중해</text>
+          <text x="560" y="182" text-anchor="middle" font-size="14.5" fill="var(--muted)">메소포타미아</text>
+          <text x="690" y="118" text-anchor="middle" font-size="14.5" fill="var(--muted)">페르시아</text>
 
           <line x1="340" y1="68" x2="780" y2="68" stroke="var(--muted)" stroke-width="1" stroke-dasharray="1,4"></line>
           <line x1="340" y1="62" x2="340" y2="74" stroke="var(--muted)" stroke-width="1"></line>
           <line x1="780" y1="62" x2="780" y2="74" stroke="var(--muted)" stroke-width="1"></line>
-          <text x="560" y="52" text-anchor="middle" font-size="13.5" fill="var(--ink)" class="yr">약 2,500~3,000 km</text>
+          <text x="560" y="52" text-anchor="middle" font-size="14.5" fill="var(--ink)" class="yr">약 2,500~3,000 km</text>
 
-          <text x="320" y="178" text-anchor="middle" font-size="12" fill="var(--muted)">같은 지역</text>
+          <text x="320" y="178" text-anchor="middle" font-size="13" fill="var(--muted)">같은 지역</text>
 
           <!-- Judaism pin -->
           <circle cx="300" cy="150" r="6" fill="var(--olive)" stroke="var(--paper-2)" stroke-width="2"></circle>
-          <text x="300" y="104" text-anchor="middle" font-size="14.5" fill="var(--olive)" font-family="var(--font-display)">가나안 · 유대</text>
-          <text x="300" y="120" text-anchor="middle" font-size="13" fill="var(--muted)">고대 유대교의 발상지</text>
+          <text x="300" y="104" text-anchor="middle" font-size="15.5" fill="var(--olive)" font-family="var(--font-display)">가나안 · 유대</text>
+          <text x="300" y="120" text-anchor="middle" font-size="14" fill="var(--muted)">고대 유대교의 발상지</text>
 
           <!-- Christianity pin -->
           <circle cx="340" cy="150" r="6" fill="var(--indigo)" stroke="var(--paper-2)" stroke-width="2"></circle>
-          <text x="360" y="222" text-anchor="start" font-size="14.5" fill="var(--indigo)" font-family="var(--font-display)">예루살렘</text>
-          <text x="360" y="238" text-anchor="start" font-size="13" fill="var(--muted)">예수의 활동 무대</text>
+          <text x="360" y="222" text-anchor="start" font-size="15.5" fill="var(--indigo)" font-family="var(--font-display)">예루살렘</text>
+          <text x="360" y="238" text-anchor="start" font-size="14" fill="var(--muted)">예수의 활동 무대</text>
 
           <!-- Bactria pin -->
           <circle cx="780" cy="150" r="6" fill="var(--amber)" stroke="var(--paper-2)" stroke-width="2"></circle>
-          <text x="780" y="104" text-anchor="middle" font-size="14.5" fill="var(--amber)" font-family="var(--font-display)">박트리아 · 동부 이란</text>
-          <text x="780" y="120" text-anchor="middle" font-size="13" fill="var(--muted)">조로아스터의 활동 무대(추정)</text>
+          <text x="780" y="104" text-anchor="middle" font-size="15.5" fill="var(--amber)" font-family="var(--font-display)">박트리아 · 동부 이란</text>
+          <text x="780" y="120" text-anchor="middle" font-size="14" fill="var(--muted)">조로아스터의 활동 무대(추정)</text>
         </svg>
       </div>
       <figcaption>올리브색 점이 유대교, 남색 점이 그리스도교, 호박색 점이 조로아스터교의 발상지입니다. 유대교와 그리스도교의 두 점은 거의 겹칠 만큼 가깝지만, 조로아스터교의 발상지까지는 메소포타미아·페르시아를 아우르는 넓은 지역이 놓여 있습니다.</figcaption>
@@ -627,28 +633,28 @@
             </marker>
           </defs>
 
-          <text x="20" y="300" text-anchor="middle" font-size="12.5" fill="var(--muted)" transform="rotate(-90 20 300)">시간이 아래로 흐름</text>
+          <text x="20" y="300" text-anchor="middle" font-size="13.5" fill="var(--muted)" transform="rotate(-90 20 300)">시간이 아래로 흐름</text>
 
           <!-- actor headers -->
           <rect x="60" y="20" width="140" height="50" rx="6" fill="var(--paper-2)" stroke="var(--teal)" stroke-width="1.25"></rect>
-          <text x="130" y="42" text-anchor="middle" font-size="14.5" fill="var(--teal)" font-family="var(--font-display)">불교</text>
-          <text x="130" y="58" text-anchor="middle" font-size="11.5" fill="var(--muted)">인도 · 기원전 6~5세기</text>
+          <text x="130" y="42" text-anchor="middle" font-size="15.5" fill="var(--teal)" font-family="var(--font-display)">불교</text>
+          <text x="130" y="58" text-anchor="middle" font-size="12.5" fill="var(--muted)">인도 · 기원전 6~5세기</text>
 
           <rect x="290" y="20" width="140" height="50" rx="6" fill="var(--paper-2)" stroke="var(--amber)" stroke-width="1.25"></rect>
-          <text x="360" y="42" text-anchor="middle" font-size="14.5" fill="var(--amber)" font-family="var(--font-display)">조로아스터교</text>
-          <text x="360" y="58" text-anchor="middle" font-size="11.5" fill="var(--muted)">페르시아 · 기원전 1500~1000년경</text>
+          <text x="360" y="42" text-anchor="middle" font-size="15.5" fill="var(--amber)" font-family="var(--font-display)">조로아스터교</text>
+          <text x="360" y="58" text-anchor="middle" font-size="12.5" fill="var(--muted)">페르시아 · 기원전 1500~1000년경</text>
 
           <rect x="510" y="20" width="140" height="50" rx="6" fill="var(--paper-2)" stroke="var(--olive)" stroke-width="1.25"></rect>
-          <text x="580" y="42" text-anchor="middle" font-size="14.5" fill="var(--olive)" font-family="var(--font-display)">유대교</text>
-          <text x="580" y="58" text-anchor="middle" font-size="11.5" fill="var(--muted)">가나안·유대 · 기원전 2000~538년경</text>
+          <text x="580" y="42" text-anchor="middle" font-size="15.5" fill="var(--olive)" font-family="var(--font-display)">유대교</text>
+          <text x="580" y="58" text-anchor="middle" font-size="12.5" fill="var(--muted)">가나안·유대 · 기원전 2000~538년경</text>
 
           <rect x="730" y="20" width="140" height="50" rx="6" fill="var(--paper-2)" stroke="var(--indigo)" stroke-width="1.25"></rect>
-          <text x="800" y="42" text-anchor="middle" font-size="14.5" fill="var(--indigo)" font-family="var(--font-display)">그리스도교</text>
-          <text x="800" y="58" text-anchor="middle" font-size="11.5" fill="var(--muted)">예루살렘 · 1세기 초</text>
+          <text x="800" y="42" text-anchor="middle" font-size="15.5" fill="var(--indigo)" font-family="var(--font-display)">그리스도교</text>
+          <text x="800" y="58" text-anchor="middle" font-size="12.5" fill="var(--muted)">예루살렘 · 1세기 초</text>
 
           <rect x="950" y="20" width="140" height="50" rx="6" fill="var(--paper-2)" stroke="var(--emerald)" stroke-width="1.25"></rect>
-          <text x="1020" y="42" text-anchor="middle" font-size="14.5" fill="var(--emerald)" font-family="var(--font-display)">이슬람교</text>
-          <text x="1020" y="58" text-anchor="middle" font-size="11.5" fill="var(--muted)">아라비아 · 7세기</text>
+          <text x="1020" y="42" text-anchor="middle" font-size="15.5" fill="var(--emerald)" font-family="var(--font-display)">이슬람교</text>
+          <text x="1020" y="58" text-anchor="middle" font-size="12.5" fill="var(--muted)">아라비아 · 7세기</text>
 
           <!-- lifelines -->
           <line x1="130" y1="70" x2="130" y2="565" stroke="var(--teal)" stroke-width="1.25" stroke-dasharray="2,3" opacity="0.7"></line>
@@ -659,40 +665,40 @@
 
           <!-- M1: Zoroastrianism -> Judaism, Cyrus, confirmed -->
           <line x1="360" y1="120" x2="580" y2="120" stroke="var(--ink)" stroke-width="1.75" marker-end="url(#net-arrow)"></line>
-          <text x="470" y="96" text-anchor="middle" font-size="13" fill="var(--ink)">키루스의 정복·칙령</text>
-          <text x="470" y="111" text-anchor="middle" font-size="12.5" fill="var(--muted)">기원전 539~538년 · ★ 확실</text>
+          <text x="470" y="96" text-anchor="middle" font-size="14" fill="var(--ink)">키루스의 정복·칙령</text>
+          <text x="470" y="111" text-anchor="middle" font-size="13.5" fill="var(--muted)">기원전 539~538년 · ★ 확실</text>
 
           <!-- M2: Buddhism -> unconfirmed target, Ashoka -->
           <line x1="130" y1="190" x2="490" y2="190" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="2,5" opacity="0.85"></line>
           <circle cx="490" cy="190" r="5" fill="var(--paper-2)" stroke="var(--muted)" stroke-width="1.5"></circle>
-          <text x="310" y="166" text-anchor="middle" font-size="12.5" fill="var(--muted)">아소카 사절, 지중해 헬레니즘 세계로 파견</text>
-          <text x="310" y="181" text-anchor="middle" font-size="12.5" fill="var(--muted)">기원전 250년경 · 수용 불확실</text>
+          <text x="310" y="166" text-anchor="middle" font-size="13.5" fill="var(--muted)">아소카 사절, 지중해 헬레니즘 세계로 파견</text>
+          <text x="310" y="181" text-anchor="middle" font-size="13.5" fill="var(--muted)">기원전 250년경 · 수용 불확실</text>
 
           <!-- M3: Judaism -> Christianity, direct inheritance -->
           <line x1="580" y1="260" x2="800" y2="260" stroke="var(--ink)" stroke-width="3" marker-end="url(#net-arrow)"></line>
-          <text x="690" y="236" text-anchor="middle" font-size="13" fill="var(--ink)">예수 운동 발생</text>
-          <text x="690" y="251" text-anchor="middle" font-size="12.5" fill="var(--muted)">1세기 초(30년경) · ◆ 직접 상속</text>
+          <text x="690" y="236" text-anchor="middle" font-size="14" fill="var(--ink)">예수 운동 발생</text>
+          <text x="690" y="251" text-anchor="middle" font-size="13.5" fill="var(--muted)">1세기 초(30년경) · ◆ 직접 상속</text>
 
           <!-- M4: Zoroastrianism -> Christianity, Magi motif, debated -->
           <line x1="360" y1="330" x2="800" y2="330" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#net-arrow-muted)"></line>
-          <text x="580" y="306" text-anchor="middle" font-size="12.5" fill="var(--muted)">동방박사(마고이) 모티프</text>
-          <text x="580" y="321" text-anchor="middle" font-size="12.5" fill="var(--muted)">1세기 말(85년경) · ⚠ 논쟁적</text>
+          <text x="580" y="306" text-anchor="middle" font-size="13.5" fill="var(--muted)">동방박사(마고이) 모티프</text>
+          <text x="580" y="321" text-anchor="middle" font-size="13.5" fill="var(--muted)">1세기 말(85년경) · ⚠ 논쟁적</text>
 
           <!-- M5: Buddhism -> Christianity, narrative-parallel claims, unconfirmed -->
           <line x1="130" y1="400" x2="760" y2="400" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="2,5" opacity="0.85"></line>
           <circle cx="760" cy="400" r="5" fill="var(--paper-2)" stroke="var(--muted)" stroke-width="1.5"></circle>
-          <text x="445" y="376" text-anchor="middle" font-size="12.5" fill="var(--muted)">설화 유사성 주장(학설)</text>
-          <text x="445" y="391" text-anchor="middle" font-size="12.5" fill="var(--muted)">2~3세기경 · 직접 증거 없음</text>
+          <text x="445" y="376" text-anchor="middle" font-size="13.5" fill="var(--muted)">설화 유사성 주장(학설)</text>
+          <text x="445" y="391" text-anchor="middle" font-size="13.5" fill="var(--muted)">2~3세기경 · 직접 증거 없음</text>
 
           <!-- M6: Christianity -> Islam, direct inheritance -->
           <line x1="800" y1="470" x2="1020" y2="470" stroke="var(--ink)" stroke-width="3" marker-end="url(#net-arrow)"></line>
-          <text x="910" y="446" text-anchor="middle" font-size="13" fill="var(--ink)">아브라함 전통 계승</text>
-          <text x="910" y="461" text-anchor="middle" font-size="12.5" fill="var(--muted)">7세기 · ◆ 직접 계승</text>
+          <text x="910" y="446" text-anchor="middle" font-size="14" fill="var(--ink)">아브라함 전통 계승</text>
+          <text x="910" y="461" text-anchor="middle" font-size="13.5" fill="var(--muted)">7세기 · ◆ 직접 계승</text>
 
           <!-- M7: Zoroastrianism -> Islam, conquest, confirmed -->
           <line x1="360" y1="540" x2="1020" y2="540" stroke="var(--ink)" stroke-width="1.75" marker-end="url(#net-arrow)"></line>
-          <text x="690" y="516" text-anchor="middle" font-size="13" fill="var(--ink)">아랍의 페르시아 정복</text>
-          <text x="690" y="531" text-anchor="middle" font-size="12.5" fill="var(--muted)">7세기 중반 · ★ 확실</text>
+          <text x="690" y="516" text-anchor="middle" font-size="14" fill="var(--ink)">아랍의 페르시아 정복</text>
+          <text x="690" y="531" text-anchor="middle" font-size="13.5" fill="var(--muted)">7세기 중반 · ★ 확실</text>
         </svg>
       </div>
       <figcaption>굵은 실선(◆)은 직접 계승, 얇은 실선(★)은 확인된 접촉, 점선(⚠)은 학계에서 다투는 영향 관계입니다. 열린 원으로 끝나는 점선은 "접촉이 주장되지만 직접 증거는 없음"을 뜻합니다 — 불교의 두 화살표가 그렇습니다. 화살표가 다른 생명선을 가로지르는 것은 그 전통과 무관하게 지나간다는 뜻일 뿐입니다(예: 조로아스터교→그리스도교 화살표가 유대교 생명선을 가로지름). 이 다섯 전통의 접촉은 7세기 이후로도 이슬람 황금시대·십자군·몽골 제국·1893년 세계 종교 의회·1965년 제2차 바티칸 공의회까지 계속 이어지며, 자세한 내용은 아래 연표에서 다룹니다.</figcaption>
@@ -742,10 +748,10 @@
           <circle cx="957" cy="50" r="4" fill="var(--ink)"></circle>
           <circle cx="960" cy="50" r="4" fill="var(--ink)"></circle>
 
-          <text x="60" y="76" text-anchor="start" font-size="12.5" fill="var(--muted)" class="yr">기원전 1500년</text>
-          <text x="540" y="76" text-anchor="middle" font-size="12.5" fill="var(--muted)" class="yr">기원후 1세기</text>
-          <text x="760" y="76" text-anchor="middle" font-size="12.5" fill="var(--muted)" class="yr">8세기</text>
-          <text x="960" y="76" text-anchor="end" font-size="12.5" fill="var(--muted)" class="yr">1965년</text>
+          <text x="60" y="76" text-anchor="start" font-size="13.5" fill="var(--muted)" class="yr">기원전 1500년</text>
+          <text x="540" y="76" text-anchor="middle" font-size="13.5" fill="var(--muted)" class="yr">기원후 1세기</text>
+          <text x="760" y="76" text-anchor="middle" font-size="13.5" fill="var(--muted)" class="yr">8세기</text>
+          <text x="960" y="76" text-anchor="end" font-size="13.5" fill="var(--muted)" class="yr">1965년</text>
         </svg>
       </div>
       <figcaption>점 하나가 아래 표의 한 행입니다 — 채운 원은 ★확실한 접촉/◆직접 계승, 빈 원은 ⚠논쟁적 영향, 작은 점은 그 외(독자 발생·접촉 없음 등)입니다. 압축 축이라 가로 위치는 실제 연도 간격과 정확히 비례하지 않지만, 페르시아-유대 접촉기(기원전 6~5세기)와 7세기 이후가 유독 촘촘하다는 흐름은 보입니다.</figcaption>
@@ -1337,7 +1343,7 @@
 
   </div>
 
-  <p class="colophon">작성자 · 개세마리 · 최초 작성 2026-08-19 · v2.4</p>
+  <p class="colophon">작성자 · 개세마리 · 최초 작성 2026-08-19 · v2.5</p>
 
 </div>
 
