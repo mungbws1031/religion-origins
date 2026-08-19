@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>유대교·조로아스터교·불교·그리스도교의 기원과 접점</title>
-<meta name="description" content="유대교·조로아스터교·불교·그리스도교·이슬람교의 기원과 접점을 기원전 5000년경부터 20세기까지 타임라인·시퀀스맵·연표로 정리했습니다.">
+<meta name="description" content="유대교·조로아스터교·불교·그리스도교·이슬람교의 기원과 접점, 그리고 개신교 신학 분파 계보를 탭으로 나눠 타임라인·시퀀스맵·계보도·표로 정리했습니다.">
 <style>
   :root {
     --stone: #EDE6D5;
@@ -319,6 +319,28 @@
     color: var(--muted);
     text-align: center;
   }
+
+  .tabs {
+    display: flex;
+    gap: 4px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 36px;
+    flex-wrap: wrap;
+  }
+  .tab-btn {
+    font-family: var(--font-display);
+    font-size: 15px;
+    background: none;
+    border: none;
+    padding: 10px 6px;
+    margin: 0 12px -1px 0;
+    cursor: pointer;
+    color: var(--muted);
+    border-bottom: 2px solid transparent;
+  }
+  .tab-btn:hover { color: var(--ink); }
+  .tab-btn[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--indigo); }
+  [role="tabpanel"][hidden] { display: none; }
 </style>
 </head>
 <body>
@@ -335,6 +357,13 @@
       <span class="muted-note">※ 조로아스터·유대교의 초기 연대는 학계 추정치이며 합의된 정설이 없습니다. 근거는 각 절 하단에 표시했습니다.</span>
     </p>
   </header>
+
+  <div class="tabs" role="tablist" aria-label="페이지 섹션">
+    <button type="button" class="tab-btn" role="tab" id="tab-btn-origins" aria-selected="true" aria-controls="panel-origins">기원과 접점</button>
+    <button type="button" class="tab-btn" role="tab" id="tab-btn-theology" aria-selected="false" aria-controls="panel-theology" tabindex="-1">그리스도교 신학 분파</button>
+  </div>
+
+  <div id="panel-origins" role="tabpanel" aria-labelledby="tab-btn-origins">
 
   <section aria-labelledby="timeline-h">
     <h2 id="timeline-h">기원 타임라인 — 약 1,200년의 간격</h2>
@@ -1031,8 +1060,192 @@
     </p>
   </div>
 
-  <p class="colophon">작성자 · 개세마리 · 최초 작성 2026-08-19 · v1.9</p>
+  </div>
+
+  <div id="panel-theology" role="tabpanel" aria-labelledby="tab-btn-theology" hidden>
+
+  <section aria-labelledby="prot-tree-h">
+    <h2 id="prot-tree-h">그리스도교 신학 분파 — 계보 타임라인맵</h2>
+    <p class="section-intro">위에서 아래로 시간이 흐릅니다. 종교개혁 이전 서방 교회(로마 가톨릭)에서 갈라져 나온 주요 개신교 분파를 계보 형태로 정리했습니다. 웨슬리안(감리교)·칼뱅주의(개혁교회)를 포함해 아홉 갈래를 다뤘습니다.</p>
+    <figure>
+      <div class="svg-wrap">
+        <svg class="wide" viewBox="0 0 1150 600" role="img" aria-label="개신교 분파 계보도: 로마 가톨릭교회에서 1517년 루터파, 1525년 재세례파, 1536년 개혁교회(칼뱅주의), 1534년 성공회가 갈라져 나왔다. 개혁교회에서 1560년경 장로교가, 성공회에서 청교도와 1738년 웨슬리안(감리교)이 갈라져 나왔다. 청교도에서 1609년 침례교가, 웨슬리안에서 1906년 오순절운동이 갈라져 나왔다">
+          <defs>
+            <marker id="tree-none" markerWidth="1" markerHeight="1"></marker>
+          </defs>
+
+          <!-- connecting lines -->
+          <line x1="520" y1="91" x2="100" y2="148" stroke="var(--indigo)" stroke-width="1.25" opacity="0.6"></line>
+          <line x1="520" y1="91" x2="320" y2="148" stroke="var(--indigo)" stroke-width="1.25" opacity="0.6"></line>
+          <line x1="520" y1="91" x2="540" y2="148" stroke="var(--indigo)" stroke-width="1.25" opacity="0.6"></line>
+          <line x1="520" y1="91" x2="900" y2="148" stroke="var(--indigo)" stroke-width="1.25" opacity="0.6"></line>
+
+          <line x1="540" y1="241" x2="540" y2="298" stroke="var(--indigo)" stroke-width="1.25" opacity="0.6"></line>
+          <line x1="900" y1="241" x2="800" y2="298" stroke="var(--indigo)" stroke-width="1.25" opacity="0.6"></line>
+          <line x1="900" y1="241" x2="1000" y2="298" stroke="var(--indigo)" stroke-width="1.25" opacity="0.6"></line>
+
+          <line x1="800" y1="391" x2="800" y2="448" stroke="var(--indigo)" stroke-width="1.25" opacity="0.6"></line>
+          <line x1="1000" y1="391" x2="1000" y2="448" stroke="var(--indigo)" stroke-width="1.25" opacity="0.6"></line>
+
+          <!-- Row 0: root -->
+          <rect x="435" y="29" width="170" height="62" rx="8" fill="var(--paper-2)" stroke="var(--muted)" stroke-width="1.25"></rect>
+          <text x="520" y="47" text-anchor="middle" font-size="13" fill="var(--ink)" font-family="var(--font-display)">로마 가톨릭교회</text>
+          <text x="520" y="62" text-anchor="middle" font-size="10.5" fill="var(--muted)" class="yr">종교개혁 이전</text>
+          <text x="520" y="77" text-anchor="middle" font-size="9.5" fill="var(--muted)">서방 교회</text>
+
+          <!-- Row 1 -->
+          <rect x="15" y="148" width="170" height="62" rx="8" fill="var(--paper-2)" stroke="var(--indigo)" stroke-width="1.25"></rect>
+          <text x="100" y="166" text-anchor="middle" font-size="13" fill="var(--indigo)" font-family="var(--font-display)">루터파</text>
+          <text x="100" y="181" text-anchor="middle" font-size="10.5" fill="var(--muted)" class="yr">1517년</text>
+          <text x="100" y="196" text-anchor="middle" font-size="9.5" fill="var(--muted)">면죄부 비판·이신칭의</text>
+
+          <rect x="235" y="148" width="170" height="62" rx="8" fill="var(--paper-2)" stroke="var(--indigo)" stroke-width="1.25"></rect>
+          <text x="320" y="166" text-anchor="middle" font-size="13" fill="var(--indigo)" font-family="var(--font-display)">재세례파</text>
+          <text x="320" y="181" text-anchor="middle" font-size="10.5" fill="var(--muted)" class="yr">1525년</text>
+          <text x="320" y="196" text-anchor="middle" font-size="9.5" fill="var(--muted)">유아세례 거부</text>
+
+          <rect x="455" y="148" width="170" height="62" rx="8" fill="var(--paper-2)" stroke="var(--indigo)" stroke-width="1.25"></rect>
+          <text x="540" y="166" text-anchor="middle" font-size="13" fill="var(--indigo)" font-family="var(--font-display)">개혁교회</text>
+          <text x="540" y="181" text-anchor="middle" font-size="10.5" fill="var(--muted)" class="yr">1536년</text>
+          <text x="540" y="196" text-anchor="middle" font-size="9.5" fill="var(--muted)">칼뱅주의, 예정론</text>
+
+          <rect x="815" y="148" width="170" height="62" rx="8" fill="var(--paper-2)" stroke="var(--indigo)" stroke-width="1.25"></rect>
+          <text x="900" y="166" text-anchor="middle" font-size="13" fill="var(--indigo)" font-family="var(--font-display)">성공회</text>
+          <text x="900" y="181" text-anchor="middle" font-size="10.5" fill="var(--muted)" class="yr">1534년</text>
+          <text x="900" y="196" text-anchor="middle" font-size="9.5" fill="var(--muted)">수장령, 이혼 문제</text>
+
+          <!-- Row 2 -->
+          <rect x="455" y="298" width="170" height="62" rx="8" fill="var(--paper-2)" stroke="var(--indigo)" stroke-width="1.25"></rect>
+          <text x="540" y="316" text-anchor="middle" font-size="13" fill="var(--indigo)" font-family="var(--font-display)">장로교</text>
+          <text x="540" y="331" text-anchor="middle" font-size="10.5" fill="var(--muted)" class="yr">1560년경</text>
+          <text x="540" y="346" text-anchor="middle" font-size="9.5" fill="var(--muted)">장로 중심 교회정치</text>
+
+          <rect x="715" y="298" width="170" height="62" rx="8" fill="var(--paper-2)" stroke="var(--indigo)" stroke-width="1.25"></rect>
+          <text x="800" y="316" text-anchor="middle" font-size="13" fill="var(--indigo)" font-family="var(--font-display)">청교도</text>
+          <text x="800" y="331" text-anchor="middle" font-size="10.5" fill="var(--muted)" class="yr">16~17세기</text>
+          <text x="800" y="346" text-anchor="middle" font-size="9.5" fill="var(--muted)">성공회 정화 요구</text>
+
+          <rect x="915" y="298" width="170" height="62" rx="8" fill="var(--paper-2)" stroke="var(--indigo)" stroke-width="1.25"></rect>
+          <text x="1000" y="316" text-anchor="middle" font-size="13" fill="var(--indigo)" font-family="var(--font-display)">웨슬리안</text>
+          <text x="1000" y="331" text-anchor="middle" font-size="10.5" fill="var(--muted)" class="yr">1738년</text>
+          <text x="1000" y="346" text-anchor="middle" font-size="9.5" fill="var(--muted)">감리교, 회심·성화</text>
+
+          <!-- Row 3 -->
+          <rect x="715" y="448" width="170" height="62" rx="8" fill="var(--paper-2)" stroke="var(--indigo)" stroke-width="1.25"></rect>
+          <text x="800" y="466" text-anchor="middle" font-size="13" fill="var(--indigo)" font-family="var(--font-display)">침례교</text>
+          <text x="800" y="481" text-anchor="middle" font-size="10.5" fill="var(--muted)" class="yr">1609년</text>
+          <text x="800" y="496" text-anchor="middle" font-size="9.5" fill="var(--muted)">신자의 침례만 인정</text>
+
+          <rect x="915" y="448" width="170" height="62" rx="8" fill="var(--paper-2)" stroke="var(--indigo)" stroke-width="1.25"></rect>
+          <text x="1000" y="466" text-anchor="middle" font-size="13" fill="var(--indigo)" font-family="var(--font-display)">오순절운동</text>
+          <text x="1000" y="481" text-anchor="middle" font-size="10.5" fill="var(--muted)" class="yr">1906년</text>
+          <text x="1000" y="496" text-anchor="middle" font-size="9.5" fill="var(--muted)">성령세례·방언 체험</text>
+        </svg>
+      </div>
+      <figcaption>위→아래로 시간이 흐르는 계보도입니다. 선은 "누가 누구에서 갈라져 나왔는지"만 나타내며(직접적 제도적 분리), 침례교는 청교도 분리주의자들에게서 갈라졌지만 네덜란드 재세례파(메노나이트)의 영향도 함께 받았습니다 — 선으로는 생략했지만 아래 표의 "등장 이유"에 반영했습니다.</figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="prot-table-h">
+    <h2 id="prot-table-h">분류와 연표 — 언제, 왜 등장했나</h2>
+    <p class="section-intro">여섯 갈래를 같은 기준으로 나란히 비교했습니다.</p>
+    <div class="table-wrap">
+      <table class="wide">
+        <caption>개신교 주요 분파 분류·연표</caption>
+        <thead>
+          <tr>
+            <th scope="col" class="row-label-head">항목</th>
+            <th scope="col" class="ch">루터파</th>
+            <th scope="col" class="ch">개혁교회(칼뱅주의)</th>
+            <th scope="col" class="ch">성공회</th>
+            <th scope="col" class="ch">재세례파</th>
+            <th scope="col" class="ch">웨슬리안(감리교)</th>
+            <th scope="col" class="ch">오순절운동</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">창시자·핵심인물</th>
+            <td class="ch-cell">마르틴 루터</td>
+            <td class="ch-cell">장 칼뱅(츠빙글리 계승)</td>
+            <td class="ch-cell">헨리 8세(신학은 토마스 크랜머)</td>
+            <td class="ch-cell">콘라트 그레벨 등 스위스 형제단</td>
+            <td class="ch-cell">존 웨슬리</td>
+            <td class="ch-cell">윌리엄 시모어(아주사 거리)</td>
+          </tr>
+          <tr>
+            <th scope="row">등장 시기·장소</th>
+            <td class="ch-cell"><span class="yr">1517년</span>, 독일 비텐베르크</td>
+            <td class="ch-cell"><span class="yr">1536년</span>, 스위스 제네바</td>
+            <td class="ch-cell"><span class="yr">1534년</span>, 잉글랜드</td>
+            <td class="ch-cell"><span class="yr">1525년</span>, 스위스 취리히</td>
+            <td class="ch-cell"><span class="yr">1738년</span>, 잉글랜드</td>
+            <td class="ch-cell"><span class="yr">1906년</span>, 미국 로스앤젤레스</td>
+          </tr>
+          <tr>
+            <th scope="row">등장 이유</th>
+            <td class="ch-cell">면죄부 판매 비판, "오직 성서·오직 믿음"</td>
+            <td class="ch-cell">예정론과 하나님 주권 중심의 체계적 신학 정립</td>
+            <td class="ch-cell">헨리 8세의 이혼 승인 문제로 교황권 거부(정치적 계기)</td>
+            <td class="ch-cell">유아세례 무효화, 국가교회 자체를 거부(급진 종교개혁)</td>
+            <td class="ch-cell">형식화된 성공회에 대한 신앙부흥, 개인적 회심 체험 강조</td>
+            <td class="ch-cell">감리교 성결운동에서 성령세례·방언 체험을 교리화</td>
+          </tr>
+          <tr>
+            <th scope="row">핵심 신학</th>
+            <td class="ch-cell">이신칭의, 성찬에서 그리스도의 실재 임재(공재설)</td>
+            <td class="ch-cell">이중예정론, 하나님의 절대 주권</td>
+            <td class="ch-cell">가톨릭과 개신교의 중용(via media), 주교제 유지</td>
+            <td class="ch-cell">신자의 침례만 인정, 폭력·맹세 거부(평화주의)</td>
+            <td class="ch-cell">아르미니우스주의(자유의지), 성화(완전을 향한 성장)</td>
+            <td class="ch-cell">성령세례는 회심과 별개의 체험, 방언을 그 증거로 봄</td>
+          </tr>
+          <tr>
+            <th scope="row">오늘날 대표 교단</th>
+            <td class="ch-cell">루터교회(전 세계 약 7천만 명)</td>
+            <td class="ch-cell">장로교·개혁교회</td>
+            <td class="ch-cell">성공회·감독교회</td>
+            <td class="ch-cell">메노나이트·아미시·후터라이트</td>
+            <td class="ch-cell">감리교</td>
+            <td class="ch-cell">하나님의 성회 등 오순절 계열 교단</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="footnote">
+    <p>
+      ※ 이 계보도는 "누가 누구에서 제도적으로 갈라졌는가"를 중심으로 단순화했습니다. 실제로는 경건주의·모라비안 형제단 같은 신앙 운동이 여러 갈래에 두루 영향을 줬고,
+      침례교처럼 한 전통이 둘 이상의 뿌리(청교도 분리주의 + 재세례파)를 갖는 경우도 있어 나무 모양보다 그물망에 가깝습니다.
+    </p>
+    <p>
+      퀘이커(1650년대)·회중교회·근본주의·복음주의처럼 이 페이지에서 다루지 않은 갈래도 많습니다 — 지면상 웨슬리안·칼뱅주의를 포함해 아홉 갈래로 추렸습니다.
+    </p>
+  </div>
+
+  </div>
+
+  <p class="colophon">작성자 · 개세마리 · 최초 작성 2026-08-19 · v2.0</p>
 
 </div>
+
+<script>
+(function () {
+  var tabs = document.querySelectorAll('.tab-btn');
+  tabs.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      tabs.forEach(function (b) {
+        b.setAttribute('aria-selected', 'false');
+        b.tabIndex = -1;
+        document.getElementById(b.getAttribute('aria-controls')).hidden = true;
+      });
+      btn.setAttribute('aria-selected', 'true');
+      btn.tabIndex = 0;
+      document.getElementById(btn.getAttribute('aria-controls')).hidden = false;
+    });
+  });
+})();
+</script>
 </body>
 </html>
